@@ -12,7 +12,7 @@
 
 .nav-container {
   width: 100%;
-  background-color: #333;
+  background-color: #2475C9;
 }
 
 nav {
@@ -46,4 +46,17 @@ nav > ul > li > a {
 
 nav > ul > li > a:hover {
   color: orange;
+}
+
+/* MISSION */
+
+.mission-container {
+  background-color: #E5E5E5;
+}
+
+.mission-container p {
+  text-align: center;
+  line-height: 25px;
+  margin: 0px;
+  padding: 100px 80px;
 }
