@@ -1,5 +1,12 @@
 /* GLOBAL */
 
+:root {
+  --primary-color: #2475C9;
+  --secondary-color: rgb(98,151,205);
+  --light-color: #E5E5E5;
+  --accent-color: orange;
+}
+
 .wrapper {
   margin-right: auto;
   margin-left:  auto;
@@ -58,7 +65,7 @@
 
 .nav-container {
   width: 100%;
-  background-color: #2475C9;
+  background-color: var(--primary-color);
 }
 
 nav {
@@ -91,13 +98,13 @@ nav > ul > li > a {
 }
 
 nav > ul > li > a:hover {
-  color: orange;
+  color: var(--accent-color);
 }
 
 /* MISSION */
 
 .mission-container {
-  background-color: #E5E5E5;
+  background-color: var(--light-color);
 }
 
 .mission-container p {

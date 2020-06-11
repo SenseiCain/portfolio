@@ -11,6 +11,35 @@ import Footer from './components/Footer';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 class App extends Component {
+
+  componentDidMount() {
+    // Update SVG - Accent Colors
+    const accentEls = [
+      ...document.querySelectorAll(".skateboard-item"),
+      ...document.querySelectorAll(".light-item"),
+      ...document.querySelectorAll(".mug-item"),
+      document.querySelector(".chair-item")
+    ];
+    accentEls.forEach(el => el.style.fill = "var(--accent-color)");
+
+    // Primary Colors
+    const primaryEls = [ ...document.querySelectorAll(".shirt-item") ];
+    primaryEls.forEach(el => {
+      el.style.fill = "var(--primary-color)"
+      el.style.stroke = "var(--primary-color)"
+    });
+
+    // Secondary Colors
+    const seoncdaryEls = [ ...document.querySelectorAll(".laptop-item") ];
+    seoncdaryEls.forEach(el => el.style.fill = "var(--secondary-color)");
+
+    const lightEls = [
+      ...document.querySelectorAll(".lamp-arm-item"),
+      document.querySelector(".desk-item")
+    ];
+    lightEls.forEach(el => el.style.fill = "var(--light-color)")
+  }
+
   render() {
     return (
       <Router>
