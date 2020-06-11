@@ -1,10 +1,10 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { NavLink } from 'react-router-dom';
 
-class NavBar extends Component {
-    render() {
-        return (
-            <div>
+const NavBar = () => {
+    return (
+        <div className="nav-container">
+            <nav className="wrapper">
                 <ul>
                     <li>
                         <NavLink to="/">Home</NavLink>
@@ -16,9 +16,9 @@ class NavBar extends Component {
                         <NavLink to="/Contact">Contact</NavLink>
                     </li>
                 </ul>
-            </div>
-        )
-    }
+            </nav>
+        </div>
+    )
 }
 
 export default NavBar;
