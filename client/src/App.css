@@ -113,3 +113,23 @@ nav > ul > li > a:hover {
   margin: 0px;
   padding: 100px 80px;
 }
+
+/* PROJECTS */
+
+.projects-title,
+.projects-main {
+}
+
+.projects-title h1 {
+  color: var(--secondary-color);
+  background-color: var(--light-color);
+  padding: 10px 20px;
+  margin: 0px;
+  font-size: 2.5em;
+}
+
+.projects-main {
+  height: 100px;
+  padding: 10px 50px;
+  background-color: var(--secondary-color)
+}

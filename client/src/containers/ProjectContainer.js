@@ -3,7 +3,14 @@ import React, { Component } from 'react';
 class ProjectContainer extends Component {
     render() {
         return (
-            <h3>Project Container</h3>
+            <div className="wrapper">
+                <div className="projects-title">
+                    <h1>Projects</h1>
+                </div>
+                <div className="projects-main">
+
+                </div>
+            </div>
         )
     }
 }
