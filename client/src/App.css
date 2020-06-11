@@ -133,3 +133,36 @@ nav > ul > li > a:hover {
   padding: 10px 50px;
   background-color: var(--secondary-color)
 }
+
+/* FOOTER */
+
+.footer-container {
+  padding: 10px 0px;
+  background-color: var(--primary-color);
+}
+
+/* BLOG */
+
+.blog-container {
+  height: 500px;
+  background-color: var(--light-color);
+  padding: 0px 10px;
+}
+
+.blog-container h1 {
+  margin: 0px;
+  padding: 20px 0px;
+}
+
+/* CONTACT */
+
+.contact-container {
+  height: 500px;
+  background-color: var(--light-color);
+  padding: 0px 10px;
+}
+
+.contact-container h1 {
+  margin: 0px;
+  padding: 20px 0px;
+}
