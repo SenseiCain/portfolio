@@ -9,10 +9,10 @@
     </g>
     <g id="Face" transform="matrix(1,0,0,1,-6.94096,-238.485)">
         <g transform="matrix(1,0,0,1.36164,6.30859,-126.967)">
-            <path d="M423.82,359.949L377.098,359.949L388.778,341.133L412.14,341.133L423.82,359.949Z" style="fill:rgb(235,235,235);stroke:rgb(201,79,36);stroke-width:0.84px;"/>
+            <path class="face-item" d="M423.82,359.949L377.098,359.949L388.778,341.133L412.14,341.133L423.82,359.949Z" style="fill:rgb(235,235,235);stroke:rgb(201,79,36);stroke-width:0.84px;"/>
         </g>
         <g transform="matrix(1.25406,0,0,1.2687,-106.267,-92.0246)">
-            <ellipse cx="409.1" cy="314.426" rx="26.83" ry="34.25" style="fill:rgb(235,235,235);"/>
+            <ellipse class="face-item" cx="409.1" cy="314.426" rx="26.83" ry="34.25" style="fill:rgb(235,235,235);"/>
         </g>
         <g id="Glasses" transform="matrix(1,0,0,1,6.64566,-0.0115932)">
             <g transform="matrix(1,0,0,1,30.9023,155.791)">

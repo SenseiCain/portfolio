@@ -15,10 +15,8 @@ class App extends Component {
   componentDidMount() {
     // Update SVG - Accent Colors
     const accentEls = [
-      ...document.querySelectorAll(".skateboard-item"),
-      ...document.querySelectorAll(".light-item"),
       ...document.querySelectorAll(".mug-item"),
-      document.querySelector(".chair-item")
+      document.querySelectorAll(".skateboard-item")[0]
     ];
     accentEls.forEach(el => el.style.fill = "var(--accent-color)");
 
@@ -30,14 +28,23 @@ class App extends Component {
     });
 
     // Secondary Colors
-    const seoncdaryEls = [ ...document.querySelectorAll(".laptop-item") ];
+    const seoncdaryEls = [ 
+      ...document.querySelectorAll(".laptop-item"),
+      document.querySelectorAll(".skateboard-item")[1],
+      ...document.querySelectorAll(".light-item"),
+      document.querySelector(".chair-item")
+    ];
     seoncdaryEls.forEach(el => el.style.fill = "var(--secondary-color)");
 
     const lightEls = [
       ...document.querySelectorAll(".lamp-arm-item"),
+      ...document.querySelectorAll(".face-item"),
       document.querySelector(".desk-item")
     ];
-    lightEls.forEach(el => el.style.fill = "var(--light-color)")
+    lightEls.forEach(el => {
+      el.style.fill = "var(--light-color)";
+      el.style.stroke = "var(--light-color)";
+    })
   }
 
   render() {
