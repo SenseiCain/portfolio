@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import ProjectCarousel from '../components/ProjectCarousel';
 
 class ProjectContainer extends Component {
     render() {
@@ -8,7 +9,7 @@ class ProjectContainer extends Component {
                     <h1>Projects</h1>
                 </div>
                 <div className="projects-main">
-
+                    <ProjectCarousel />
                 </div>
             </div>
         )
