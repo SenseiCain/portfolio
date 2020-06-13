@@ -91,6 +91,7 @@ nav ul li:nth-child(2) a {
 
 nav > ul > li > a {
   color: white;
+  font-weight: 500;
   display: inline-block;
   text-decoration: none;
   padding: 0em 1em;
@@ -330,9 +331,36 @@ nav > ul > li > a:hover {
 /* CONTACT */
 
 .contact-container {
-  height: 500px;
+  height: calc(60vh - 70px);
   background-color: var(--light-color);
-  padding: 0px 10px;
+  padding: 0px 80px;
+  display: flex;
+  align-items: center;
+}
+
+.contact-container form {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+
+.contact-container input,
+.contact-container textarea {
+  padding: 8px;
+  margin-bottom: 10px;
+  border: none;
+}
+
+.text-field {
+  height: 100px;
+}
+
+.contact-container input[type="submit"] {
+  background-color: var(--accent-color);
+  margin: auto;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
 }
 
 .contact-container h1 {
