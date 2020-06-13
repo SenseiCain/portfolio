@@ -5,53 +5,12 @@ import { ReactComponent as LeftArrow } from '../images/left-arrow.svg';
 import { ReactComponent as RightArrow } from '../images/right-arrow.svg';
 
 class ProjectCarousel extends Component {
-    constructor() {
-        super();
-        this.state = {
-            active: 1,
-            project: {
-                title: "Clickyz",
-                description: "Interactive mechanical keyboard editor. This was a personal project of mine portraying my appreciation of handmade things. It was a deep dive into the fundamentals of Sinatra, and a long rabbit hole into the wonders of JS.",
-                img: '',
-                tech: ["Sinatra", "WEBGL", "p5.js"],
-                links: {
-                    heroku: "https://www.youtube.com",
-                    github: "https://github.com/SenseiCain/clickyz"
-                }
-            }
-        }
+    handleNext = () => {
+        this.props.nextProject();
     }
 
-    handleClick = () => {
-        if (this.state.active === 1) {
-            this.setState({
-                active: 2,
-                project: {
-                    title: "HearthStone Deck Builder",
-                    description: "This is a project that I made yada yada yada....",
-                    img: '',
-                    tech: ["Rails", "API", "SPA"],
-                    links: {
-                        heroku: "https://www.youtube.com",
-                        github: "https://github.com/SenseiCain/hearthstone-deck-builder"
-                    }
-                }
-            })
-        } else {
-            this.setState({
-                active: 1,
-                project: {
-                    title: "Clickyz",
-                    description: "Interactive mechanical keyboard editor. This was a personal project of mine portraying my appreciation of handmade things. It was a deep dive into the fundamentals of Sinatra, and a long rabbit hole into the wonders of JS.",
-                    img: '',
-                    tech: ["Sinatra", "WEBGL", "p5.js"],
-                    links: {
-                        heroku: "https://www.youtube.com",
-                        github: "https://github.com/SenseiCain/clickyz"
-                    }
-                }
-            })
-        }
+    handlePrevious = () => {
+        this.props.prevProject();
     }
 
     render() {
@@ -60,7 +19,7 @@ class ProjectCarousel extends Component {
                 <div id="arrow-left">
                     <LeftArrow 
                         className="svg-arrow"
-                        onClick={this.handleClick}
+                        onClick={this.handlePrevious}
                     />
                 </div>
                 <div id="carousel-main">
@@ -68,13 +27,13 @@ class ProjectCarousel extends Component {
                         <div id="carousel-computer">
                             <MacSVG className="svg-mac" />
                         </div>
-                        <ProjectInfo project={this.state.project} />
+                        <ProjectInfo project={this.props.projects[this.props.activeIndex]} />
                     </div>
                 </div>
                 <div id="arrow-right" >
                     <RightArrow 
                         className="svg-arrow"
-                        onClick={this.handleClick}
+                        onClick={this.handleNext}
                     />
                 </div>
             </div>

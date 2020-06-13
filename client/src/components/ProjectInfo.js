@@ -2,9 +2,9 @@ import React from 'react';
 import { ReactComponent as GithubSVG } from '../images/github.svg';
 
 const generateTechnologies = tech => {
-    return tech.map(t => {
+    return tech.map((t, i) => {
         return (
-            <li>
+            <li key={i} >
                 <span className="technology">{t}</span>
             </li>
         )
