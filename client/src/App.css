@@ -105,13 +105,14 @@ nav > ul > li > a:hover {
 
 .mission-container {
   background-color: var(--light-color);
+  padding: 80px;
 }
 
 .mission-container p {
   text-align: center;
   line-height: 25px;
   margin: 0px;
-  padding: 100px 80px;
+  padding: 0px;
 }
 
 /* PROJECTS */
@@ -233,17 +234,50 @@ nav > ul > li > a:hover {
   transition: all 250ms ease-in-out;
 }
 
-.link {
-  text-decoration: none;
+/* BIO */
+
+#bio-container {
+  display: flex;
+  align-items: center;
+  padding: 80px 80px;
+}
+
+#bio-left {
+  flex: 1;
+}
+
+#bio-left h1 {
+  padding: 0px;
+  margin: 0px;
+}
+
+#bio-left ul {
+  margin: 0;
+  padding: 0px;
+}
+
+#bio-left ul li {
+  display: inline-block;
+  list-style-type: none;
   padding-right: 10px;
 }
 
-.link a {
-  color: white;
+#bio-left ul li a {
+  color: var(--accent-color);
   font-weight: bold;
   text-decoration: none;
-  padding: 2px 5px;
-  background-color: var(--accent-color);
+}
+
+#bio-right {
+  display: flex;
+  justify-content: center;
+  flex: 1;
+}
+
+#bio-image {
+  height: 200px;
+  width: 200px;
+  background-color: var(--primary-color);
 }
 
 /* FOOTER */
