@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import { CSSTransition, TransitionGroup } from 'react-transition-group';
+
 import ProjectInfo from './ProjectInfo';
 import { ReactComponent as MacSVG } from '../images/mac.svg';
 import { ReactComponent as LeftArrow } from '../images/left-arrow.svg';
@@ -27,7 +29,15 @@ class ProjectCarousel extends Component {
                         <div id="carousel-computer">
                             <MacSVG className="svg-mac" />
                         </div>
-                        <ProjectInfo project={this.props.projects[this.props.activeIndex]} />
+                        <TransitionGroup 
+                            id="carousel-info">
+                            <CSSTransition
+                                classNames="fade"
+                                key={this.props.activeIndex} 
+                                timeout={800}>
+                                <ProjectInfo project={this.props.projects[this.props.activeIndex]} />
+                            </CSSTransition>
+                        </TransitionGroup>
                     </div>
                 </div>
                 <div id="arrow-right" >

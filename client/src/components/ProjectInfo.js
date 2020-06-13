@@ -15,7 +15,7 @@ const ProjectInfo = props => {
     const project = props.project;
 
     return (
-        <div id="carousel-info">
+        <div id="carousel-info-inside">
             <div id="carousel-links">
                 <a href={project.links.heroku} target="_blank">
                     <h1>{project.title}</h1>

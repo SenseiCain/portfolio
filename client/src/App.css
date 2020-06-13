@@ -159,9 +159,11 @@ nav > ul > li > a:hover {
 #carousel-inside {
   width: 100%;
   display: flex;
+  position: relative;
 }
 
 #carousel-computer {
+  position: relative;
   padding: 0px 20px;
 }
 
@@ -176,10 +178,13 @@ nav > ul > li > a:hover {
 }
 
 #carousel-info {
-  display: flex;
-  flex-direction: column;
+  position: relative;
   flex: 1;
   padding: 0px 20px;
+}
+
+#carousel-info-inside {
+  position: absolute;
 }
 
 #carousel-links {
@@ -232,6 +237,28 @@ nav > ul > li > a:hover {
   padding: 2px 5px;
   background-color: var(--primary-color);
   transition: all 250ms ease-in-out;
+}
+
+/* TRANSITIONS */
+
+.fade-enter {
+  opacity: 0;
+  z-index: 1;
+}
+.fade-enter-active {
+  opacity: 1;
+  transition: opacity 400ms linear 400ms;
+}
+.fade-exit {
+  opacity: 1;
+}
+.fade-exit-active {
+  opacity: 0;
+  transition: opacity 400ms;
+}
+
+.fade-exit-done {
+  opacity: 0;
 }
 
 /* BIO */
