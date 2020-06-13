@@ -8,17 +8,19 @@ class Bio extends Component {
                     <div id="bio-left">
                         <h1>Christian Cain</h1>
                         <p>
-                        Davy Jones' Locker Spanish Main bounty chase maroon list Gold Road cackle fruit square-rigged trysail. 
-                        Barkadeer transom blow the man down gun lugsail line rutters gally gunwalls list.
+                            Adventurous young professional with innate curiousity.
+                            When I'm not buried in front of a computer,
+                            I enjoy hiking trails, skateboarding, and trying new recipes.
+                            I'm currently seeking a new challenge in the field of Software Engineering.
                         </p>
                         <ul>
                             <li>
-                                <a href="" target="_blank">
+                                <a href="https://github.com/SenseiCain" target="_blank">
                                     GitHub
                                 </a>
                             </li>
                             <li>
-                                <a href="" target="_blank">
+                                <a href="https://www.linkedin.com/in/christian-cain-805796155/" target="_blank">
                                     LinkedIn
                                 </a>
                             </li>
@@ -31,7 +33,7 @@ class Bio extends Component {
                     </div>
                     <div id="bio-right">
                         <div id="bio-image">
-                            
+
                         </div>
                     </div>
                 </div>
