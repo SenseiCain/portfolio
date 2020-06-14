@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Footer from '../components/Footer';
 
 class BlogContainer extends Component {
     render() {
@@ -7,6 +8,7 @@ class BlogContainer extends Component {
                 <div className="blog-container">
                     <h1>Blog</h1>
                 </div>
+                <Footer />
             </div>
         )
     }

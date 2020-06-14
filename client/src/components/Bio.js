@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 class Bio extends Component {
     render() {
         return (
-            <div className="wrapper">
+            <div>
                 <div id="bio-container">
                     <div id="bio-left">
                         <h1>Christian Cain</h1>

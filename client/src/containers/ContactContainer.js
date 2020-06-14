@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Footer from '../components/Footer';
 
 class ContactContainer extends Component {
     constructor() {
@@ -50,6 +51,7 @@ class ContactContainer extends Component {
                         <input type="submit" />
                     </form>
                 </div>
+                <Footer />
             </div>
         )
     }

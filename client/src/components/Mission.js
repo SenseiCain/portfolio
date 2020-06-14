@@ -2,7 +2,7 @@ import React from 'react';
 
 const Mission = () => {
     return (
-        <div className="wrapper">
+        <div>
             <div className="mission-container">
                 <p>
                     Davy Jones' Locker Spanish Main bounty chase maroon list Gold Road cackle fruit square-rigged trysail. 
