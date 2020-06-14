@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import Footer from '../components/Footer';
 import BlogLink from '../components/BlogLink';
+import Footer from '../components/Footer';
 
 class BlogContainer extends Component {
     constructor() {

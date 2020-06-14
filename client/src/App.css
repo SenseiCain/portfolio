@@ -1,5 +1,9 @@
 /* GLOBAL */
 
+::-webkit-scrollbar {
+  display: none;
+}
+
 :root {
   --primary-color: #2475C9;
   --secondary-color: rgb(98,151,205);
@@ -258,18 +262,35 @@ nav > ul > li > a:hover {
 .fade-enter {
   opacity: 0;
   z-index: 1;
-  transform: translateY(-10px);
 }
 .fade-enter-active {
+  opacity: 1;
+  transition: all 400ms ease;
+}
+.fade-exit {
+  opacity: 1;
+}
+.fade-exit-active {
+  opacity: 0;
+  transition: all 400ms ease;
+}
+
+/* TRANSITIONS - FADE & DROP */
+.fadeDrop-enter {
+  opacity: 0;
+  z-index: 1;
+  transform: translateY(-10px);
+}
+.fadeDrop-enter-active {
   opacity: 1;
   transform: translateY(0px);
   transition: all 200ms linear 200ms;
 }
-.fade-exit {
+.fadeDrop-exit {
   opacity: 1;
   transform: translateY(0px);
 }
-.fade-exit-active {
+.fadeDrop-exit-active {
   opacity: 0;
   transition: all 200ms;
   transform: translateY(-10px);
@@ -369,9 +390,7 @@ footer {
 /* BLOG */
 
 .blog-container {
-  height: 500px;
-  background-color: var(--light-color);
-  padding: 0px 10px;
+  min-height: calc(60vh - 70px);
 }
 
 .blog-container h1 {
