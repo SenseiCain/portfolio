@@ -44,7 +44,7 @@ class ProjectCarousel extends Component {
                         <TransitionGroup 
                             id="carousel-info">
                             <CSSTransition
-                                classNames="fade"
+                                classNames="fadeDrop"
                                 key={this.props.activeIndex} 
                                 timeout={400}>
                                 <ProjectInfo project={this.props.project} />
