@@ -2,12 +2,12 @@ import React, { Component } from 'react';
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import './App.css';
 
+import ScrollToTop from './components/ScrollToTop';
 import HomeContainer from './containers/HomeContainer';
 import BlogContainer from './containers/BlogContainer';
 import ContactContainer from './containers/ContactContainer';
 import Header from './components/Header';
 import NavBar from './components/NavBar';
-import Footer from './components/Footer';
 
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
@@ -51,6 +51,8 @@ class App extends Component {
   render() {
     return (
       <Router>
+        <ScrollToTop />
+
         <Header />
         <NavBar />
 

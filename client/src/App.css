@@ -1,5 +1,9 @@
 /* GLOBAL */
 
+window {
+  transition: all 400ms linear;
+}
+
 :root {
   --primary-color: #2475C9;
   --secondary-color: rgb(98,151,205);
