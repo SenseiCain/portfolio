@@ -6,7 +6,7 @@ class ProjectContainer extends Component {
 
     render() {
         return (
-            <div className="wrapper">
+            <div>
                 <div className="projects-title">
                     <h1>Projects</h1>
                 </div>
