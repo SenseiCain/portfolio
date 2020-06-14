@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import './App.css';
 
 import HomeContainer from './containers/HomeContainer';
@@ -53,13 +54,21 @@ class App extends Component {
         <Header />
         <NavBar />
 
-        <Switch>
-          <Route exact path="/" component={HomeContainer} />
-          <Route path="/blog" component={BlogContainer} />
-          <Route path="/contact" component={ContactContainer} />
-        </Switch>
-
-        <Footer />
+        <Route render={({location}) => (
+          <TransitionGroup component={null}>
+            <CSSTransition
+              classNames="fade"
+              key={location.key}
+              timeout={400}>
+              <Switch>
+                <Route exact path="/" component={HomeContainer} />
+                <Route path="/blog" component={BlogContainer} />
+                <Route path="/contact" component={ContactContainer} />
+            </Switch>
+            </CSSTransition>
+          </TransitionGroup>
+        )} />
+        
       </Router>
     )
   }

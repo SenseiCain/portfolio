@@ -355,9 +355,10 @@ nav > ul > li > a:hover {
 
 /* FOOTER */
 
-.footer-container {
+footer {
   padding: 10px 0px;
   background-color: var(--primary-color);
+  transition: all 400 linear;
 }
 
 /* BLOG */
