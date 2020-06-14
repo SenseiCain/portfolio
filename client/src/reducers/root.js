@@ -4,7 +4,7 @@ export default function root(
             {
                 title: "HearthStone Deck Builder",
                 description: "This is a project that I made yada yada yada....",
-                img: '',
+                img: "https://img.webmd.com/dtmcms/live/webmd/consumer_assets/site_images/article_thumbnails/other/cat_weight_other/1800x1200_cat_weight_other.jpg?resize=600px:*",
                 tech: ["Rails", "API", "SPA"],
                 links: {
                     heroku: "https://www.youtube.com",
@@ -14,7 +14,7 @@ export default function root(
             {
                 title: "Clickyz",
                 description: "Interactive mechanical keyboard editor. This was a personal project of mine portraying my appreciation of handmade things. It was a deep dive into the fundamentals of Sinatra, and a long rabbit hole into the wonders of JS.",
-                img: '',
+                img: "https://undark.org/wp-content/uploads/2020/02/GettyImages-1199242002-1-scaled.jpg",
                 tech: ["Sinatra", "WEBGL", "p5.js"],
                 links: {
                     heroku: "https://clickyz.heroku.com",
@@ -24,7 +24,7 @@ export default function root(
             {
                 title: "Sidetrack",
                 description: "Reddit clone using client side rendering.",
-                img: '',
+                img: "https://static.toiimg.com/photo/msid-67586673/67586673.jpg?resizemode=4&width=400",
                 tech: ["Rails", "Auth", "MVC", "OOP"],
                 links: {
                     heroku: "https://www.youtube.com",

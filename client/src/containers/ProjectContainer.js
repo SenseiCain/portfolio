@@ -3,6 +3,7 @@ import { connect } from 'react-redux';
 import ProjectCarousel from '../components/ProjectCarousel';
 
 class ProjectContainer extends Component {
+
     render() {
         return (
             <div className="wrapper">
@@ -11,7 +12,7 @@ class ProjectContainer extends Component {
                 </div>
                 <div className="projects-main">
                     <ProjectCarousel 
-                        projects={this.props.projects}
+                        project={this.props.projects[this.props.active]}
                         nextProject={this.props.nextProject}
                         prevProject={this.props.prevProject}
                         activeIndex={this.props.active} />
