@@ -27,9 +27,9 @@ class BlogContainer extends Component {
             <div className="wrapper">
                 <div className="blog-container">
                     <h1>Blogs</h1>
-                    <ul>
+                    <div id="blog-list">
                         {this.generateBlogItems()}
-                    </ul>
+                    </div>
                 </div>
                 <Footer />
             </div>
