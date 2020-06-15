@@ -1,4 +1,4 @@
-export default function fetchBlogTitles() {
+const fetchBlogTitles = () => {
     return (dispatch) => {
         // dispatch({ type: 'STARTING_FETCH_REQUEST' });
         const url = "https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@christian24cain";
@@ -6,8 +6,15 @@ export default function fetchBlogTitles() {
         fetch(url)
             .then(resp => resp.json())
             .then(json => {
-                const titles = json.items.map(i => i.title);
-                dispatch({ type: "ADD_BLOG_TITLES", titles });
+                const blogs = json.items.map(i => ({ title: i.title, url: i.link }));
+
+                dispatch({ type: "ADD_BLOG_TITLES", blogs });
             })
     }
 }
+
+const fetchBlog = () => {
+
+}
+
+export { fetchBlogTitles, fetchBlog }

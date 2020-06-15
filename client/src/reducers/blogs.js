@@ -1,11 +1,9 @@
 export default function blogs(
-    state = {
-        titles: []
-    }, action
+    state = [], action
 ) {
     switch(action.type) {
         case("ADD_BLOG_TITLES"):
-            return { ...state, titles: action.titles };
+            return action.blogs;
 
         default:
             return state;

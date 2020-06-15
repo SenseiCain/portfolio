@@ -2,17 +2,17 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import BlogLink from '../components/BlogLink';
 import Footer from '../components/Footer';
-import fetchBlogTitles from '../actions/fetchBlogTitles';
+import { fetchBlogTitles } from '../actions/fetchBlog';
 
 class BlogContainer extends Component {
     generateBlogItems = () => {
-        return this.props.titles.map((t, i) => {
-            return <BlogLink key={i} blog={{title: t}} />
+        return this.props.blogs.map((b, i) => {
+            return <BlogLink key={i} title={b.title} />
         })
     }
 
     componentDidMount() {
-        if (this.props.titles.length === 0) {
+        if (this.props.blogs.length === 0) {
             this.props.fetchBlogs();
         }
     }
@@ -33,7 +33,7 @@ class BlogContainer extends Component {
     }
 }
 
-const mapStateToProps = state => ({ titles: state.blogs.titles });
+const mapStateToProps = state => ({ blogs: state.blogs });
 
 const mapDispatchToProps = dispatch => {
     return {
