@@ -60,9 +60,9 @@ class App extends Component {
         <Route render={({location}) => (
           <TransitionGroup component={null}>
             <CSSTransition
-              classNames="fadeDrop"
+              classNames="fade"
               key={location.key}
-              timeout={400}>
+              timeout={500}>
               <Switch>
                 <Route exact path="/" component={HomeContainer} />
                 <Route path="/blog" component={BlogContainer} />
