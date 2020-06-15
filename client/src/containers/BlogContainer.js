@@ -1,29 +1,23 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
 import BlogLink from '../components/BlogLink';
 import Footer from '../components/Footer';
+import fetchBlogTitles from '../actions/fetchBlogTitles';
 
 class BlogContainer extends Component {
-    constructor() {
-        super();
-        this.state = {
-            titles: [
-                "MVC Overview",
-                "HearthStone Deck Builder application",
-                "Clickyz application",
-                "My Experience at Flatiron",
-                "Some other blog I have yet to write"
-            ]
-        }
-    }
-
     generateBlogItems = () => {
-        return this.state.titles.map((t, i) => {
+        return this.props.titles.map((t, i) => {
             return <BlogLink key={i} blog={{title: t}} />
         })
+    }
+
+    componentDidMount() {
+        this.props.fetchBlogs();
     }
     
     render() {
         return (
+
             <div className="wrapper">
                 <div className="blog-container">
                     <h1>Blogs</h1>
@@ -37,4 +31,12 @@ class BlogContainer extends Component {
     }
 }
 
-export default BlogContainer;
+const mapStateToProps = state => ({ titles: state.blogs.titles });
+
+const mapDispatchToProps = dispatch => {
+    return {
+        fetchBlogs: () => dispatch(fetchBlogTitles())
+    }
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(BlogContainer);
