@@ -12,7 +12,9 @@ class BlogContainer extends Component {
     }
 
     componentDidMount() {
-        this.props.fetchBlogs();
+        if (this.props.titles.length === 0) {
+            this.props.fetchBlogs();
+        }
     }
     
     render() {
