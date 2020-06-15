@@ -23,7 +23,7 @@ class ProjectContainer extends Component {
 }
 
 const mapStateToProps = state => {
-    return { projects: state.projects, active: state.activeIndex }
+    return { projects: state.projects.list, active: state.projects.activeIndex }
 }
 
 const mapDispatchToProps = dispatch => {
