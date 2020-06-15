@@ -24,10 +24,10 @@ class NavBar extends Component {
                             <NavLink to="/">Home</NavLink>
                         </li>
                         <li>
-                            <NavLink to="Blog">Blog</NavLink>
+                            <NavLink to="/blog">Blog</NavLink>
                         </li>
                         <li>
-                            <NavLink to="/Contact">Contact</NavLink>
+                            <NavLink to="/contact">Contact</NavLink>
                         </li>
                     </ul>
                 </nav>
