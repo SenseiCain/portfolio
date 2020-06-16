@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import profile from '../images/profile.jpeg';
 
 class Bio extends Component {
     render() {
@@ -33,7 +34,7 @@ class Bio extends Component {
                     </div>
                     <div id="bio-right">
                         <div id="bio-image">
-
+                            <img src={profile} />
                         </div>
                     </div>
                 </div>
