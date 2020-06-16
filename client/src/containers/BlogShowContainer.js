@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { Redirect } from 'react-router-dom';
+import Footer from '../components/Footer';
 
 class BlogShowComponent extends Component {
     componentDidMount() {
@@ -28,9 +30,15 @@ class BlogShowComponent extends Component {
         } else {
 
             return (
-                <div id="blog-show" className="shadow">
-                    <h1 id="blog-title"></h1>
-                    <div id="blog-content"></div>
+                <div className="shadow">
+                    <div id="blog-show">
+                        <h1 id="blog-title"></h1>
+                        <div id="blog-content"></div>
+                        <Link to={"/blog"} >
+                            Back
+                        </Link>
+                    </div>
+                    <Footer />
                 </div>
             )
         }
