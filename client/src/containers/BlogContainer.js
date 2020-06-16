@@ -20,7 +20,7 @@ class BlogContainer extends Component {
     render() {
         return (
 
-            <div className="wrapper">
+            <div className="shadow">
                 <div className="blog-container">
                     <h1>Blogs</h1>
                     <div id="blog-list">

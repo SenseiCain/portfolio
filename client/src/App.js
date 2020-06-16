@@ -8,6 +8,7 @@ import BlogContainer from './containers/BlogContainer';
 import ContactContainer from './containers/ContactContainer';
 import Header from './components/Header';
 import NavBar from './components/NavBar';
+import Footer from './components/Footer';
 
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
@@ -57,7 +58,7 @@ class App extends Component {
         <NavBar />
 
         <Route render={({location}) => (
-          <TransitionGroup component={null}>
+          <TransitionGroup className="wrapper">
             <CSSTransition
               classNames="fade"
               key={location.key}

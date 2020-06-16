@@ -30,7 +30,7 @@ class ContactContainer extends Component {
 
     render() {
         return (
-            <div className="wrapper">
+            <div className="shadow drop">
                 <div className="contact-container">
                     <form onSubmit={this.handleSubmit}>
                         <input 

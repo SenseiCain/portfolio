@@ -7,7 +7,7 @@ import Footer from '../components/Footer';
 class HomeContainer extends Component {
     render() {
         return (
-            <div className="wrapper">
+            <div className="shadow">
                 <Mission />
                 <ProjectContainer />
                 <Bio />

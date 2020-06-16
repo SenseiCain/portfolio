@@ -17,8 +17,8 @@ class NavBar extends Component {
 
     render() {
         return (
-            <div id="nav-container" className="nav-container">
-                <nav className="wrapper">
+            <div id="nav-container" className="nav-container raise">
+                <nav className="wrapper raise">
                     <ul>
                         <li>
                             <NavLink to="/">Home</NavLink>
