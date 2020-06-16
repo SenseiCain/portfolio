@@ -7,7 +7,7 @@ import { fetchBlogTitles } from '../actions/fetchBlog';
 class BlogContainer extends Component {
     generateBlogItems = () => {
         return this.props.blogs.map((b, i) => {
-            return <BlogLink key={i} title={b.title} />
+            return <BlogLink key={i} blog={b} setActiveBlog={this.props.setActiveBlog}/>
         })
     }
 
@@ -33,11 +33,12 @@ class BlogContainer extends Component {
     }
 }
 
-const mapStateToProps = state => ({ blogs: state.blogs });
+const mapStateToProps = state => ({ blogs: state.blogs.items });
 
 const mapDispatchToProps = dispatch => {
     return {
-        fetchBlogs: () => dispatch(fetchBlogTitles())
+        fetchBlogs: () => dispatch(fetchBlogTitles()),
+        setActiveBlog: blog => dispatch({ type: "SET_ACTIVE_BLOG", blog })
     }
 }
 

@@ -6,7 +6,6 @@ import ScrollToTop from './components/ScrollToTop';
 import HomeContainer from './containers/HomeContainer';
 import BlogContainer from './containers/BlogContainer';
 import ContactContainer from './containers/ContactContainer';
-import BlogShowContainer from './containers/BlogShowContainer';
 import Header from './components/Header';
 import NavBar from './components/NavBar';
 
@@ -66,7 +65,6 @@ class App extends Component {
               <Switch>
                 <Route exact path="/" component={HomeContainer} />
                 <Route exact path="/blog" component={BlogContainer} />
-                <Route path="/blog/:blogId" component={BlogShowContainer} />
                 <Route path="/contact" component={ContactContainer} />
             </Switch>
             </CSSTransition>
