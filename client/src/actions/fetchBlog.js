@@ -13,8 +13,4 @@ const fetchBlogTitles = () => {
     }
 }
 
-const fetchBlog = () => {
-
-}
-
-export { fetchBlogTitles, fetchBlog }
+export { fetchBlogTitles }

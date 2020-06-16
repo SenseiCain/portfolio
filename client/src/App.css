@@ -483,3 +483,24 @@ footer {
   margin-left:  auto;
   max-width: 980px;
 }
+
+/* TEST */
+
+#blog-show {
+  padding: 20px;
+  font-family: 'Merriweather', serif;
+}
+
+#blog-show h1{
+  margin: 50px 0px;
+}
+
+#blog-show p {
+  margin: 20px 0px;
+  line-height: 25px;
+}
+
+#blog-show h3 {
+  margin-top: 40px;
+  font-size: 20px;
+}

@@ -8,9 +8,9 @@ import BlogContainer from './containers/BlogContainer';
 import ContactContainer from './containers/ContactContainer';
 import Header from './components/Header';
 import NavBar from './components/NavBar';
-import Footer from './components/Footer';
 
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import BlogShowContainer from './containers/BlogShowContainer';
 
 class App extends Component {
 
@@ -52,6 +52,7 @@ class App extends Component {
   render() {
     return (
       <Router>
+        <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap" rel="stylesheet" />
         <ScrollToTop />
 
         <Header />
@@ -67,6 +68,7 @@ class App extends Component {
                 <Route exact path="/" component={HomeContainer} />
                 <Route exact path="/blog" component={BlogContainer} />
                 <Route path="/contact" component={ContactContainer} />
+                <Route path="/blog/:blogTitle" component={BlogShowContainer} />
             </Switch>
             </CSSTransition>
           </TransitionGroup>

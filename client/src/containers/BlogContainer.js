@@ -38,7 +38,7 @@ const mapStateToProps = state => ({ blogs: state.blogs.items });
 const mapDispatchToProps = dispatch => {
     return {
         fetchBlogs: () => dispatch(fetchBlogTitles()),
-        setActiveBlog: blog => dispatch({ type: "SET_ACTIVE_BLOG", blog })
+        setActiveBlog: title => dispatch({ type: "SET_ACTIVE_BLOG", title })
     }
 }
 
