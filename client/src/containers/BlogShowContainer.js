@@ -48,8 +48,8 @@ class BlogShowComponent extends Component {
                 <div className="shadow">
                     <div id="blog-show">
                         <div id="blog-title">
-                            <h1></h1>
-                            <h6></h6>
+                            <h1>Loading...</h1>
+                            <h6>Loading...</h6>
                         </div>
                         <div id="blog-content"></div>
                         <Link to={"/blog"} className="back-btn">

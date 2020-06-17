@@ -15,17 +15,17 @@ class Bio extends Component {
                         </p>
                         <ul>
                             <li>
-                                <a href="https://github.com/SenseiCain" target="_blank">
+                                <a href="https://github.com/SenseiCain" target="_blank" rel="noopener noreferrer">
                                     GitHub
                                 </a>
                             </li>
                             <li>
-                                <a href="https://www.linkedin.com/in/christian-cain-805796155/" target="_blank">
+                                <a href="https://www.linkedin.com/in/christian-cain-805796155/" target="_blank" rel="noopener noreferrer">
                                     LinkedIn
                                 </a>
                             </li>
                             <li>
-                                <a href="" target="_blank">
+                                <a href="https://github.com/SenseiCain" target="_blank" rel="noopener noreferrer">
                                     Resume
                                 </a>
                             </li>
@@ -33,7 +33,7 @@ class Bio extends Component {
                     </div>
                     <div id="bio-right">
                         <div id="bio-image">
-                            <img src={profile} />
+                            <img src={profile} alt="" />
                         </div>
                     </div>
                 </div>

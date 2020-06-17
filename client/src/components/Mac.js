@@ -12,7 +12,7 @@ const Mac = props => {
                         classNames={props.direction}
                         timeout={400}
                         key={props.activeIndex}>
-                            <img src={props.src} />
+                            <img src={props.src} alt="" />
                         </CSSTransition>
                 </TransitionGroup>
                 
