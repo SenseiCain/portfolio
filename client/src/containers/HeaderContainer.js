@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
-import { ReactComponent as PersonSVG } from '../images/person-at-computer-v2.svg';
+import { connect } from 'react-redux';
 import { ReactComponent as LampSVG} from '../images/lamp.svg';
 import { ReactComponent as SkateboardSVG } from '../images/skateboard.svg';
+import Person from '../components/Person';
 
 class Header extends Component {
 
@@ -46,7 +47,7 @@ class Header extends Component {
                 <div className="header-container">
                     <SkateboardSVG className="svg-skateboard-1" />
                     <SkateboardSVG className="svg-skateboard-2" />
-                    <PersonSVG className="svg-person" />
+                    <Person isLoading={this.props.isLoading} />
                     <LampSVG className="svg-lamp" />
                 </div>
             </div>
@@ -54,4 +55,8 @@ class Header extends Component {
     }
 }
 
-export default Header;
+const mapStateToProps = state => {
+    return { isLoading: state.loading.status }
+}
+
+export default connect(mapStateToProps)(Header);

@@ -6,7 +6,7 @@ import ScrollToTop from './components/ScrollToTop';
 import HomeContainer from './containers/HomeContainer';
 import BlogContainer from './containers/BlogContainer';
 import ContactContainer from './containers/ContactContainer';
-import Header from './components/Header';
+import HeaderContainer from './containers/HeaderContainer';
 import NavBar from './components/NavBar';
 
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
@@ -20,7 +20,7 @@ class App extends Component {
         <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto+Condensed&display=swap" rel="stylesheet" />
         <ScrollToTop />
 
-        <Header />
+        <HeaderContainer />
         <NavBar />
 
         <Route render={({location}) => (

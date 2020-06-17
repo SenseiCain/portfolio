@@ -61,6 +61,18 @@ h2 {
   transform: translateX(-50%);
 }
 
+#loading-container {
+  transition: all 300ms ease;
+}
+
+.not-loading {
+  fill: white;
+}
+
+.loading {
+  fill: orange !important;
+}
+
 .svg-skateboard-1,
 .svg-skateboard-2 {
   position: absolute;

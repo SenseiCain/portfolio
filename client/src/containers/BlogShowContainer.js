@@ -14,6 +14,8 @@ class BlogShowComponent extends Component {
             const blogDateEl = document.querySelector("#blog-title h6");
             const blogContentEl = document.querySelector("#blog-content");
 
+            this.props.startAnimation();
+
             fetch(url)
                 .then(resp => resp.json())
                 .then(json => {
@@ -30,6 +32,8 @@ class BlogShowComponent extends Component {
                             a.remove();
                         }
                     })
+
+                    this.props.stopAnimation();
                 })
         }
     }
@@ -59,6 +63,13 @@ class BlogShowComponent extends Component {
     }
 }
 
-const mapStateToProps = state => ({ activeBlogTitle: state.blogs.activeBlogTitle })
+const mapStateToProps = state => ({ activeBlogTitle: state.blogs.activeBlogTitle });
 
-export default connect(mapStateToProps)(BlogShowComponent)
+const mapDispatchToProps = dispatch => {
+    return {
+        startAnimation: () => dispatch({ type: "START_ANIMATION" }),
+        stopAnimation: () => dispatch({ type: "STOP_ANIMATION" })
+    }
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(BlogShowComponent)
