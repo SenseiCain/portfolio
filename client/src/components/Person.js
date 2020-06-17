@@ -60,7 +60,8 @@ const Person = props => {
                     <path className="laptop-item" d="M478.487,551.474C478.487,547.983 475.717,545.154 472.3,545.154L330.48,545.154C327.062,545.154 324.292,547.983 324.292,551.474L324.292,552.009C324.292,555.5 327.062,558.33 330.48,558.33L472.3,558.33C475.717,558.33 478.487,555.5 478.487,552.009L478.487,551.474Z" style={{fill:"rgb(98,151,205)"}}/>
                 </g>
                 <g transform="matrix(0.725604,0,0,0.725604,130.898,336.39)">
-                    <ellipse id="loading-container" className={toggleLoadingAnimation()} cx="356.918" cy="244.013" rx="22.066" ry="21.893"/>
+                    <circle id="loading-container" cx="356.918" cy="244.013" r="22" />
+                    <circle className={toggleLoadingAnimation()} cx="356.918" cy="244.013"/>
                 </g>
             </g>
             <g id="Mug" transform="matrix(1,0,0,1.38534,-4.86077,-471.177)">

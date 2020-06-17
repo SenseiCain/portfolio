@@ -62,15 +62,35 @@ h2 {
 }
 
 #loading-container {
+  fill: white;
   transition: all 300ms ease;
 }
 
-.not-loading {
-  fill: white;
+.loading {
+  fill: var(--accent-color);
+  -webkit-animation: sk-scaleout 1250ms ease infinite;
+  animation: sk-scaleout 1250ms ease infinite;
 }
 
-.loading {
-  fill: orange !important;
+@-webkit-keyframes sk-scaleout {
+  0% { 
+    r: 0;
+    opacity: 1;
+   }
+  100% {
+    r: 22;
+    opacity: 0;
+  }
+}
+
+@keyframes sk-scaleout {
+  0% { 
+    r: 0;
+    opacity: 1;
+  } 100% {
+    r: 22;
+    opacity: 0;
+  }
 }
 
 .svg-skateboard-1,
