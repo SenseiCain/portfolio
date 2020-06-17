@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
 import Footer from '../components/Footer';
+import emailjs from 'emailjs-com';
 
 class ContactContainer extends Component {
     constructor() {
@@ -25,7 +27,23 @@ class ContactContainer extends Component {
 
     handleSubmit = event => {
         event.preventDefault();
-        console.log(this.state)
+        this.props.startAnimation();
+
+        const emailData = {
+            number: Math.floor(Math.random() * 1000) + 1 ,
+            email: this.state.address,
+            subject: this.state.subject,
+            message: this.state.message
+        };
+        
+        emailjs.send('default_service', 'contact_me', emailData, 'user_6IfNSpK6uTB8qiBavAHoF')
+            .then((result) => {
+                console.log(result.text);
+                this.props.stopAnimation();
+            }, (error) => {
+                console.log(error.text);
+                this.props.stopAnimation();
+            });
     }
 
     render() {
@@ -34,16 +52,19 @@ class ContactContainer extends Component {
                 <div className="contact-container">
                     <form onSubmit={this.handleSubmit}>
                         <input 
+                            name="email_address"
                             type="text" 
                             value={this.state.address}
                             placeholder="Email address"
                             onChange={this.handleAddressChange}/>
                         <input 
+                            name="subject"
                             type="text" 
                             value={this.state.subject}
                             placeholder="Subject"
                             onChange={this.handleSubjectChange}/>
                         <textarea 
+                            name="message"
                             value={this.state.message}
                             placeholder="Message..."
                             rows="10"
@@ -57,4 +78,11 @@ class ContactContainer extends Component {
     }
 }
 
-export default ContactContainer;
+const mapDispatchToProps = dispatch => {
+    return {
+        startAnimation: () => dispatch({ type: "START_ANIMATION" }),
+        stopAnimation: () => dispatch({ type: "STOP_ANIMATION" })
+    }
+}
+
+export default connect(null, mapDispatchToProps)(ContactContainer);
