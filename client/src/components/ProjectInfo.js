@@ -17,9 +17,7 @@ const ProjectInfo = props => {
     return (
         <div id="carousel-info-inside">
             <div id="carousel-links">
-                <a href={project.links.heroku} target="_blank">
-                    <h1>{project.title}</h1>
-                </a>
+                <h2>{project.title}</h2>
                 <a href={project.links.github} target="_blank" >
                     <GithubSVG id="svg-github" />
                 </a>

@@ -10,15 +10,26 @@ class BlogShowComponent extends Component {
             const url = "https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@christian24cain";
             const activeBlogTitle = this.props.activeBlogTitle;
             
-            const blogTitleEl = document.querySelector("#blog-title");
+            const blogTitleEl = document.querySelector("#blog-title h1");
+            const blogDateEl = document.querySelector("#blog-title h6");
             const blogContentEl = document.querySelector("#blog-content");
 
             fetch(url)
                 .then(resp => resp.json())
                 .then(json => {
-                    const blog = json.items.find(b => b.title === activeBlogTitle)
+                    const blog = json.items.find(b => b.title === activeBlogTitle);
+
                     blogTitleEl.innerHTML = blog.title;
+                    blogDateEl.innerHTML = blog.pubDate;
                     blogContentEl.innerHTML = blog.content;
+
+                    // Remove Medium GIFs
+                    const aEls = document.querySelectorAll("#blog-content a");
+                    aEls.forEach(a => {
+                        if (a.href.includes("medium")) {
+                            a.remove();
+                        }
+                    })
                 })
         }
     }
@@ -32,9 +43,12 @@ class BlogShowComponent extends Component {
             return (
                 <div className="shadow">
                     <div id="blog-show">
-                        <h1 id="blog-title"></h1>
+                        <div id="blog-title">
+                            <h1></h1>
+                            <h6></h6>
+                        </div>
                         <div id="blog-content"></div>
-                        <Link to={"/blog"} >
+                        <Link to={"/blog"} className="back-btn">
                             Back
                         </Link>
                     </div>

@@ -12,7 +12,6 @@ class Bio extends Component {
                             Adventurous young professional with innate curiousity.
                             When I'm not buried in front of a computer,
                             I enjoy hiking trails, skateboarding, and trying new recipes.
-                            I'm currently seeking a new challenge in the field of Software Engineering.
                         </p>
                         <ul>
                             <li>

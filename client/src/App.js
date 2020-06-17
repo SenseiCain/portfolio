@@ -17,7 +17,7 @@ class App extends Component {
   render() {
     return (
       <Router>
-        <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto+Condensed&display=swap" rel="stylesheet" />
         <ScrollToTop />
 
         <Header />
