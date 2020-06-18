@@ -9,9 +9,12 @@ class Bio extends Component {
                     <div id="bio-left">
                         <h1>Christian Cain</h1>
                         <p>
-                            Adventurous young professional with innate curiousity.
+                            I'm an innately curious person,
+                            who's always been fascinated with the boundlessness of software.
                             When I'm not buried in front of a computer,
-                            I enjoy hiking trails, skateboarding, and trying new recipes.
+                            I'm either hiking trails, skateboarding, or cooking new recipes.
+                            Feel free to reach out if you find my experience to be a fit.
+                            Thanks!
                         </p>
                         <ul>
                             <li>

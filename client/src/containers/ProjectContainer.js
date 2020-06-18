@@ -1,8 +1,13 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import ProjectCarousel from '../components/ProjectCarousel';
+import fetchProjects from '../actions/fetchProjects';
 
 class ProjectContainer extends Component {
+
+    componentDidMount() {
+        this.props.fetchProjects();
+    }
 
     render() {
         return (
@@ -28,6 +33,7 @@ const mapStateToProps = state => {
 
 const mapDispatchToProps = dispatch => {
     return {
+        fetchProjects: () => dispatch(fetchProjects()),
         nextProject: () => dispatch({ type: "NEXT_PROJECT" }),
         prevProject: () => dispatch({ type: "PREVIOUS_PROJECT" })
     }

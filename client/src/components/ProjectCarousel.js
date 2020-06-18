@@ -37,7 +37,7 @@ class ProjectCarousel extends Component {
                     <div id="carousel-inside">
                         <div id="carousel-computer">
                             <Mac 
-                                src={this.props.project.img} 
+                                src={(this.props.project) ? this.props.project.img : "" } 
                                 activeIndex={this.props.activeIndex}
                                 direction={this.state.direction} />
                         </div>

@@ -5,9 +5,10 @@ const Mission = () => {
         <div>
             <div className="mission-container">
                 <p>
-                    Davy Jones' Locker Spanish Main bounty chase maroon list Gold Road cackle fruit square-rigged trysail. 
-                    Barkadeer transom blow the man down gun lugsail line rutters gally gunwalls list. 
-                    Tack ballast run a rig gunwalls boatswain scuttle Sink me chase snow ho.
+                    Creative young professional with a knack for tinkering and solving problems.
+                    I recently graduated from Flatiron School where I specialized in technologies 
+                    such as Ruby on Rails, JS, and React. 
+                    I'm currently looking for my next challenge.
                 </p>
             </div>
         </div>
