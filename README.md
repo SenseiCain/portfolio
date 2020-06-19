@@ -6,7 +6,7 @@ This was made using create-react-app, in conjunction with Redux and React-Router
 
 ## Screenshot
 
-<img src="https://raw.githubusercontent.com/SenseiCain/portfolio/master/preview.png" width="500px />
+<img src="https://raw.githubusercontent.com/SenseiCain/portfolio/master/preview.png" width="500px" />
 
 ## APIs
 
