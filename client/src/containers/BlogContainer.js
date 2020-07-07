@@ -26,6 +26,14 @@ class BlogContainer extends Component {
                     <div id="blog-list">
                         {this.generateBlogItems()}
                     </div>
+                    <h5>Blogs sourced from  
+                        <a 
+                            id="medium-link"
+                            href="https://medium.com/@christian24cain" 
+                            target="_blank">
+                            Medium
+                        </a>
+                    </h5>
                 </div>
                 <Footer />
             </div>

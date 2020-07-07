@@ -474,6 +474,17 @@ footer {
   transform: translateX(10px)
 }
 
+.blog-container h5 {
+  text-align: center;
+  margin: 0px;
+}
+
+#medium-link {
+  padding-left: 5px;
+  text-decoration: none;
+  color: var(--accent-color)
+}
+
 /* BLOG SHOW */
 #blog-show {
   min-height: calc(60vh - 77px);
