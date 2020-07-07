@@ -13,16 +13,8 @@ class ContactContainer extends Component {
         }
     }
 
-    handleAddressChange = event => {
-        this.setState({ ...this.state, address: event.target.value })
-    }
-
-    handleSubjectChange = event => {
-        this.setState({ ...this.state, subject: event.target.value })
-    }
-
-    handleMessageChange = event => {
-        this.setState({ ...this.state, message: event.target.value })
+    handleChange = ({target: {name, value}}) => {
+        this.setState({ ...this.state, [name]: value })
     }
 
     handleSubmit = event => {
@@ -52,23 +44,23 @@ class ContactContainer extends Component {
                 <div className="contact-container">
                     <form onSubmit={this.handleSubmit}>
                         <input 
-                            name="email_address"
+                            name="address"
                             type="text" 
                             value={this.state.address}
                             placeholder="Email address"
-                            onChange={this.handleAddressChange}/>
+                            onChange={this.handleChange}/>
                         <input 
                             name="subject"
                             type="text" 
                             value={this.state.subject}
                             placeholder="Subject"
-                            onChange={this.handleSubjectChange}/>
+                            onChange={this.handleChange}/>
                         <textarea 
                             name="message"
                             value={this.state.message}
                             placeholder="Message..."
                             rows="10"
-                            onChange={this.handleMessageChange}/>
+                            onChange={this.handleChange}/>
                         <input type="submit" />
                     </form>
                 </div>
