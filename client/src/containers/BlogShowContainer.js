@@ -5,33 +5,43 @@ import { Redirect } from 'react-router-dom';
 import Footer from '../components/Footer';
 
 class BlogShowComponent extends Component {
+    constructor() {
+        super();
+        this.state = {
+            html: {
+                title: 'Loading...',
+                pubDate: 'Loading...',
+                content: ''
+            }
+        }
+    }
+
     componentDidMount() {
         if (this.props.activeBlogTitle !== '') {
             const url = "https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@christian24cain";
-            const activeBlogTitle = this.props.activeBlogTitle;
-            
-            const blogTitleEl = document.querySelector("#blog-title h1");
-            const blogDateEl = document.querySelector("#blog-title h6");
-            const blogContentEl = document.querySelector("#blog-content");
 
             this.props.startAnimation();
 
             fetch(url)
                 .then(resp => resp.json())
                 .then(json => {
-                    const blog = json.items.find(b => b.title === activeBlogTitle);
+                    const blog = json.items.find(b => b.title === this.props.activeBlogTitle);
 
-                    blogTitleEl.innerHTML = blog.title;
-                    blogDateEl.innerHTML = blog.pubDate;
-                    blogContentEl.innerHTML = blog.content;
+                    this.setState({
+                        html: {
+                            title: blog.title,
+                            pubDate: blog.pubDate,
+                            content: blog.content
+                        }
+                    });
 
                     // Remove Medium GIFs
-                    const aEls = document.querySelectorAll("#blog-content a");
-                    aEls.forEach(a => {
-                        if (a.href.includes("medium")) {
-                            a.remove();
-                        }
-                    })
+                    // const aEls = document.querySelectorAll("#blog-content a");
+                    // aEls.forEach(a => {
+                    //     if (a.href.includes("medium")) {
+                    //         a.remove();
+                    //     }
+                    // })
 
                     this.props.stopAnimation();
                 })
@@ -48,10 +58,10 @@ class BlogShowComponent extends Component {
                 <div className="shadow">
                     <div id="blog-show">
                         <div id="blog-title">
-                            <h1>Loading...</h1>
-                            <h6>Loading...</h6>
+                            <h1 dangerouslySetInnerHTML={{__html: this.state.html.title}}></h1>
+                            <h6 dangerouslySetInnerHTML={{__html: this.state.html.pubDate}}></h6>
                         </div>
-                        <div id="blog-content"></div>
+                        <div dangerouslySetInnerHTML={{__html: this.state.html.content}}></div>
                         <Link to={"/blog"} className="back-btn">
                             Back
                         </Link>

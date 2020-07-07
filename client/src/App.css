@@ -481,22 +481,23 @@ footer {
   margin-bottom: 20px;
 }
 
-#blog-content a {
+#blog-show a {
   text-decoration: none;
   color: var(--accent-color);
   font-weight: 600;
 }
 
-#blog-content figure {
+#blog-show figure {
   display: flex;
   justify-content: center;
 }
 
-#blog-content img {
+#blog-show img {
   width: 70vh;
+  margin: auto;
 }
 
-#blog-content pre {
+#blog-show pre {
   line-height: 10px;
   padding-left: 30px;
   font-weight: bold;
@@ -532,7 +533,7 @@ footer {
   margin-bottom: 20px;
   text-decoration: none;
   background-color: var(--accent-color);
-  color: white;
+  color: white !important;
 }
 
 /* CONTACT */

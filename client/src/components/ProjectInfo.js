@@ -11,8 +11,7 @@ const generateTechnologies = project => {
     })
 }
 
-const ProjectInfo = props => {
-    const project = props.project;
+const ProjectInfo = ({project}) => {
 
     return (
         <div id="carousel-info-inside">

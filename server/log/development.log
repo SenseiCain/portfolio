@@ -1348,3 +1348,1189 @@ Processing by ProjectsController#index as */*
 Completed 200 OK in 144ms (Views: 0.3ms | ActiveRecord: 15.8ms | Allocations: 14761)
 
 
+Started GET "/projects" for ::1 at 2020-06-19 09:46:12 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by ProjectsController#index as */*
+  [1m[36mProject Load (8.6ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+  [1m[36mTechnology Load (0.6ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."project_id" = ?[0m  [["project_id", "1"]]
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+  [1m[36mTechnology Load (0.2ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."project_id" = ?[0m  [["project_id", "2"]]
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+  [1m[36mTechnology Load (0.2ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."project_id" = ?[0m  [["project_id", "3"]]
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+Completed 200 OK in 18ms (Views: 0.1ms | ActiveRecord: 9.6ms | Allocations: 4095)
+
+
+Started GET "/projects" for ::1 at 2020-06-19 09:46:12 -0500
+Processing by ProjectsController#index as */*
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+  [1m[36mTechnology Load (0.2ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."project_id" = ?[0m  [["project_id", "1"]]
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+  [1m[36mTechnology Load (0.2ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."project_id" = ?[0m  [["project_id", "2"]]
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+  [1m[36mTechnology Load (0.2ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."project_id" = ?[0m  [["project_id", "3"]]
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+Completed 200 OK in 8ms (Views: 0.1ms | ActiveRecord: 0.6ms | Allocations: 4052)
+
+
+Started GET "/projects" for ::1 at 2020-06-19 09:48:37 -0500
+Processing by ProjectsController#index as */*
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+  [1m[36mTechnology Load (0.1ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."project_id" = ?[0m  [["project_id", "1"]]
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+  [1m[36mTechnology Load (0.1ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."project_id" = ?[0m  [["project_id", "2"]]
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+  [1m[36mTechnology Load (0.2ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."project_id" = ?[0m  [["project_id", "3"]]
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+Completed 200 OK in 8ms (Views: 0.2ms | ActiveRecord: 0.6ms | Allocations: 4070)
+
+
+Started GET "/projects" for ::1 at 2020-06-19 09:48:37 -0500
+Processing by ProjectsController#index as */*
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+  [1m[36mTechnology Load (0.2ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."project_id" = ?[0m  [["project_id", "1"]]
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+  [1m[36mTechnology Load (0.3ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."project_id" = ?[0m  [["project_id", "2"]]
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+  [1m[36mTechnology Load (0.2ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."project_id" = ?[0m  [["project_id", "3"]]
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+Completed 200 OK in 11ms (Views: 0.1ms | ActiveRecord: 0.8ms | Allocations: 4052)
+
+
+Started GET "/projects" for ::1 at 2020-06-19 09:49:20 -0500
+Processing by ProjectsController#index as */*
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+  [1m[36mTechnology Load (0.2ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."project_id" = ?[0m  [["project_id", "1"]]
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+  [1m[36mTechnology Load (0.1ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."project_id" = ?[0m  [["project_id", "2"]]
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+  [1m[36mTechnology Load (0.1ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."project_id" = ?[0m  [["project_id", "3"]]
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+Completed 200 OK in 8ms (Views: 0.1ms | ActiveRecord: 0.6ms | Allocations: 4071)
+
+
+Started GET "/projects" for ::1 at 2020-06-19 09:49:20 -0500
+Processing by ProjectsController#index as */*
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+  [1m[36mTechnology Load (0.2ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."project_id" = ?[0m  [["project_id", "1"]]
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+  [1m[36mTechnology Load (0.2ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."project_id" = ?[0m  [["project_id", "2"]]
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+  [1m[36mTechnology Load (0.1ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."project_id" = ?[0m  [["project_id", "3"]]
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+Completed 200 OK in 9ms (Views: 0.1ms | ActiveRecord: 0.7ms | Allocations: 4052)
+
+
+Started GET "/projects" for ::1 at 2020-06-19 09:50:29 -0500
+Processing by ProjectsController#index as */*
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+  [1m[36mTechnology Load (0.2ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."project_id" = ?[0m  [["project_id", "1"]]
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+  [1m[36mTechnology Load (0.2ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."project_id" = ?[0m  [["project_id", "2"]]
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+  [1m[36mTechnology Load (0.2ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."project_id" = ?[0m  [["project_id", "3"]]
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+Completed 200 OK in 9ms (Views: 0.1ms | ActiveRecord: 0.8ms | Allocations: 4070)
+
+
+Started GET "/projects" for ::1 at 2020-06-19 16:13:07 -0500
+  [1m[35m (1.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (9.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ProjectsController#index as */*
+  [1m[36mProject Load (0.7ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+  [1m[36mTechnology Load (4.3ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."project_id" = ?[0m  [["project_id", "1"]]
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+  [1m[36mTechnology Load (0.2ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."project_id" = ?[0m  [["project_id", "2"]]
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+  [1m[36mTechnology Load (0.1ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."project_id" = ?[0m  [["project_id", "3"]]
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+Completed 200 OK in 134ms (Views: 0.2ms | ActiveRecord: 6.9ms | Allocations: 14665)
+
+
+Started GET "/projects" for ::1 at 2020-06-19 16:13:50 -0500
+Processing by ProjectsController#index as */*
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+  [1m[36mTechnology Load (0.2ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."project_id" = ?[0m  [["project_id", "1"]]
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+  [1m[36mTechnology Load (0.2ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."project_id" = ?[0m  [["project_id", "2"]]
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+  [1m[36mTechnology Load (0.2ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."project_id" = ?[0m  [["project_id", "3"]]
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+Completed 200 OK in 8ms (Views: 0.2ms | ActiveRecord: 0.7ms | Allocations: 4070)
+
+
+Started GET "/projects" for ::1 at 2020-06-19 16:13:50 -0500
+Processing by ProjectsController#index as */*
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+  [1m[36mTechnology Load (0.2ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."project_id" = ?[0m  [["project_id", "1"]]
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+  [1m[36mTechnology Load (0.2ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."project_id" = ?[0m  [["project_id", "2"]]
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+  [1m[36mTechnology Load (0.3ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."project_id" = ?[0m  [["project_id", "3"]]
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+Completed 200 OK in 10ms (Views: 0.1ms | ActiveRecord: 0.8ms | Allocations: 4052)
+
+
+Started GET "/projects" for ::1 at 2020-06-21 15:04:34 -0500
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by ProjectsController#index as */*
+  [1m[36mProject Load (1.0ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+  [1m[36mTechnology Load (0.8ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."project_id" = ?[0m  [["project_id", "1"]]
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+  [1m[36mTechnology Load (0.2ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."project_id" = ?[0m  [["project_id", "2"]]
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+  [1m[36mTechnology Load (0.3ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."project_id" = ?[0m  [["project_id", "3"]]
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+Completed 200 OK in 23ms (Views: 0.7ms | ActiveRecord: 2.2ms | Allocations: 4095)
+
+
+Started GET "/projects" for ::1 at 2020-06-21 15:04:34 -0500
+Processing by ProjectsController#index as */*
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+  [1m[36mTechnology Load (0.2ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."project_id" = ?[0m  [["project_id", "1"]]
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+  [1m[36mTechnology Load (0.2ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."project_id" = ?[0m  [["project_id", "2"]]
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+  [1m[36mTechnology Load (0.2ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."project_id" = ?[0m  [["project_id", "3"]]
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+Completed 200 OK in 9ms (Views: 0.2ms | ActiveRecord: 0.7ms | Allocations: 4052)
+
+
+Started GET "/projects" for ::1 at 2020-06-21 15:04:36 -0500
+Processing by ProjectsController#index as */*
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+  [1m[36mTechnology Load (0.2ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."project_id" = ?[0m  [["project_id", "1"]]
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+  [1m[36mTechnology Load (0.2ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."project_id" = ?[0m  [["project_id", "2"]]
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+  [1m[36mTechnology Load (0.2ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."project_id" = ?[0m  [["project_id", "3"]]
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+Completed 200 OK in 9ms (Views: 0.2ms | ActiveRecord: 0.7ms | Allocations: 4070)
+
+
+Started GET "/projects" for ::1 at 2020-06-21 15:04:36 -0500
+Processing by ProjectsController#index as */*
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+  [1m[36mTechnology Load (0.3ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."project_id" = ?[0m  [["project_id", "1"]]
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+  [1m[36mTechnology Load (0.2ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."project_id" = ?[0m  [["project_id", "2"]]
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+  [1m[36mTechnology Load (0.2ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."project_id" = ?[0m  [["project_id", "3"]]
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+Completed 200 OK in 12ms (Views: 0.2ms | ActiveRecord: 0.9ms | Allocations: 4052)
+
+
+Started GET "/projects" for ::1 at 2020-06-21 15:05:29 -0500
+Processing by ProjectsController#index as */*
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+  [1m[36mTechnology Load (0.2ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."project_id" = ?[0m  [["project_id", "1"]]
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+  [1m[36mTechnology Load (0.2ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."project_id" = ?[0m  [["project_id", "2"]]
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+  [1m[36mTechnology Load (0.2ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."project_id" = ?[0m  [["project_id", "3"]]
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+Completed 200 OK in 10ms (Views: 0.1ms | ActiveRecord: 0.7ms | Allocations: 4070)
+
+
+Started GET "/projects" for ::1 at 2020-06-21 15:05:30 -0500
+Processing by ProjectsController#index as */*
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+  [1m[36mTechnology Load (0.2ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."project_id" = ?[0m  [["project_id", "1"]]
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+  [1m[36mTechnology Load (0.2ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."project_id" = ?[0m  [["project_id", "2"]]
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+  [1m[36mTechnology Load (0.1ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."project_id" = ?[0m  [["project_id", "3"]]
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+Completed 200 OK in 9ms (Views: 0.1ms | ActiveRecord: 0.7ms | Allocations: 4052)
+
+
+Started GET "/projects" for ::1 at 2020-06-21 15:05:34 -0500
+Processing by ProjectsController#index as */*
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+  [1m[36mTechnology Load (0.1ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."project_id" = ?[0m  [["project_id", "1"]]
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+  [1m[36mTechnology Load (0.1ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."project_id" = ?[0m  [["project_id", "2"]]
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+  [1m[36mTechnology Load (0.1ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."project_id" = ?[0m  [["project_id", "3"]]
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+Completed 200 OK in 8ms (Views: 0.1ms | ActiveRecord: 0.6ms | Allocations: 4052)
+
+
+Started GET "/projects" for ::1 at 2020-06-21 15:05:34 -0500
+Processing by ProjectsController#index as */*
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+  [1m[36mTechnology Load (0.2ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."project_id" = ?[0m  [["project_id", "1"]]
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+  [1m[36mTechnology Load (0.3ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."project_id" = ?[0m  [["project_id", "2"]]
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+  [1m[36mTechnology Load (0.2ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."project_id" = ?[0m  [["project_id", "3"]]
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+Completed 200 OK in 9ms (Views: 0.1ms | ActiveRecord: 0.8ms | Allocations: 4052)
+
+
+Started GET "/projects" for ::1 at 2020-06-21 15:05:37 -0500
+Processing by ProjectsController#index as */*
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+  [1m[36mTechnology Load (0.1ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."project_id" = ?[0m  [["project_id", "1"]]
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+  [1m[36mTechnology Load (0.1ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."project_id" = ?[0m  [["project_id", "2"]]
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+  [1m[36mTechnology Load (0.2ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."project_id" = ?[0m  [["project_id", "3"]]
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+Completed 200 OK in 7ms (Views: 0.1ms | ActiveRecord: 0.6ms | Allocations: 4052)
+
+
+Started GET "/projects" for ::1 at 2020-06-21 15:05:37 -0500
+Processing by ProjectsController#index as */*
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+  [1m[36mTechnology Load (0.2ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."project_id" = ?[0m  [["project_id", "1"]]
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+  [1m[36mTechnology Load (0.1ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."project_id" = ?[0m  [["project_id", "2"]]
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+  [1m[36mTechnology Load (0.1ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."project_id" = ?[0m  [["project_id", "3"]]
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+Completed 200 OK in 8ms (Views: 0.1ms | ActiveRecord: 0.7ms | Allocations: 4052)
+
+
+Started GET "/projects" for ::1 at 2020-06-21 15:06:27 -0500
+Processing by ProjectsController#index as */*
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+  [1m[36mTechnology Load (0.2ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."project_id" = ?[0m  [["project_id", "1"]]
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+  [1m[36mTechnology Load (0.2ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."project_id" = ?[0m  [["project_id", "2"]]
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+  [1m[36mTechnology Load (0.3ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."project_id" = ?[0m  [["project_id", "3"]]
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+Completed 200 OK in 10ms (Views: 0.2ms | ActiveRecord: 0.8ms | Allocations: 4052)
+
+
+Started GET "/projects" for ::1 at 2020-06-21 15:06:27 -0500
+Processing by ProjectsController#index as */*
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+  [1m[36mTechnology Load (0.2ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."project_id" = ?[0m  [["project_id", "1"]]
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+  [1m[36mTechnology Load (0.2ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."project_id" = ?[0m  [["project_id", "2"]]
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+  [1m[36mTechnology Load (0.2ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."project_id" = ?[0m  [["project_id", "3"]]
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+Completed 200 OK in 8ms (Views: 0.1ms | ActiveRecord: 0.7ms | Allocations: 4052)
+
+
+Started GET "/projects" for ::1 at 2020-06-21 15:06:30 -0500
+Processing by ProjectsController#index as */*
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+  [1m[36mTechnology Load (0.2ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."project_id" = ?[0m  [["project_id", "1"]]
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+  [1m[36mTechnology Load (0.1ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."project_id" = ?[0m  [["project_id", "2"]]
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+  [1m[36mTechnology Load (0.1ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."project_id" = ?[0m  [["project_id", "3"]]
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+Completed 200 OK in 8ms (Views: 0.1ms | ActiveRecord: 0.8ms | Allocations: 4052)
+
+
+Started GET "/projects" for ::1 at 2020-06-21 15:07:54 -0500
+Processing by ProjectsController#index as */*
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+  [1m[36mTechnology Load (0.2ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."project_id" = ?[0m  [["project_id", "1"]]
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+  [1m[36mTechnology Load (0.2ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."project_id" = ?[0m  [["project_id", "2"]]
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+  [1m[36mTechnology Load (0.2ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."project_id" = ?[0m  [["project_id", "3"]]
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+Completed 200 OK in 9ms (Views: 0.2ms | ActiveRecord: 0.7ms | Allocations: 4052)
+
+
+Started GET "/projects" for ::1 at 2020-06-21 15:07:54 -0500
+Processing by ProjectsController#index as */*
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+  [1m[36mTechnology Load (0.2ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."project_id" = ?[0m  [["project_id", "1"]]
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+  [1m[36mTechnology Load (0.1ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."project_id" = ?[0m  [["project_id", "2"]]
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+  [1m[36mTechnology Load (0.2ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."project_id" = ?[0m  [["project_id", "3"]]
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+Completed 200 OK in 9ms (Views: 0.1ms | ActiveRecord: 0.7ms | Allocations: 4052)
+
+
+Started GET "/projects" for ::1 at 2020-06-21 15:09:17 -0500
+Processing by ProjectsController#index as */*
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+  [1m[36mTechnology Load (0.2ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."project_id" = ?[0m  [["project_id", "1"]]
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+  [1m[36mTechnology Load (0.2ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."project_id" = ?[0m  [["project_id", "2"]]
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+  [1m[36mTechnology Load (0.2ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."project_id" = ?[0m  [["project_id", "3"]]
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+Completed 200 OK in 46ms (Views: 0.1ms | ActiveRecord: 0.7ms | Allocations: 4055)
+
+
+Started GET "/projects" for ::1 at 2020-06-21 15:09:17 -0500
+Processing by ProjectsController#index as */*
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+  [1m[36mTechnology Load (0.2ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."project_id" = ?[0m  [["project_id", "1"]]
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+  [1m[36mTechnology Load (0.2ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."project_id" = ?[0m  [["project_id", "2"]]
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+  [1m[36mTechnology Load (0.1ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."project_id" = ?[0m  [["project_id", "3"]]
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+Completed 200 OK in 8ms (Views: 0.1ms | ActiveRecord: 0.6ms | Allocations: 4052)
+
+
+Started GET "/projects" for ::1 at 2020-06-21 15:09:22 -0500
+Processing by ProjectsController#index as */*
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+  [1m[36mTechnology Load (0.1ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."project_id" = ?[0m  [["project_id", "1"]]
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+  [1m[36mTechnology Load (0.2ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."project_id" = ?[0m  [["project_id", "2"]]
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+  [1m[36mTechnology Load (0.2ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."project_id" = ?[0m  [["project_id", "3"]]
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+Completed 200 OK in 8ms (Views: 0.2ms | ActiveRecord: 0.7ms | Allocations: 4052)
+
+
+Started GET "/projects" for ::1 at 2020-06-21 15:09:22 -0500
+Processing by ProjectsController#index as */*
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+  [1m[36mTechnology Load (0.1ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."project_id" = ?[0m  [["project_id", "1"]]
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+  [1m[36mTechnology Load (0.1ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."project_id" = ?[0m  [["project_id", "2"]]
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+  [1m[36mTechnology Load (0.1ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."project_id" = ?[0m  [["project_id", "3"]]
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+Completed 200 OK in 7ms (Views: 0.1ms | ActiveRecord: 0.5ms | Allocations: 4052)
+
+
+Started GET "/projects" for ::1 at 2020-06-21 15:11:18 -0500
+Processing by ProjectsController#index as */*
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+  [1m[36mTechnology Load (0.1ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."project_id" = ?[0m  [["project_id", "1"]]
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+  [1m[36mTechnology Load (0.1ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."project_id" = ?[0m  [["project_id", "2"]]
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+  [1m[36mTechnology Load (0.1ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."project_id" = ?[0m  [["project_id", "3"]]
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+Completed 200 OK in 7ms (Views: 0.3ms | ActiveRecord: 0.6ms | Allocations: 4052)
+
+
+Started GET "/projects" for ::1 at 2020-06-21 15:11:18 -0500
+Processing by ProjectsController#index as */*
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+  [1m[36mTechnology Load (0.2ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."project_id" = ?[0m  [["project_id", "1"]]
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+  [1m[36mTechnology Load (0.2ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."project_id" = ?[0m  [["project_id", "2"]]
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+  [1m[36mTechnology Load (0.1ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."project_id" = ?[0m  [["project_id", "3"]]
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+Completed 200 OK in 8ms (Views: 0.1ms | ActiveRecord: 0.7ms | Allocations: 4052)
+
+
+Started GET "/projects" for ::1 at 2020-06-22 14:47:20 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by ProjectsController#index as */*
+  [1m[36mProject Load (0.6ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+  [1m[36mTechnology Load (0.6ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."project_id" = ?[0m  [["project_id", "1"]]
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+  [1m[36mTechnology Load (0.2ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."project_id" = ?[0m  [["project_id", "2"]]
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+  [1m[36mTechnology Load (0.1ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."project_id" = ?[0m  [["project_id", "3"]]
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+Completed 200 OK in 10ms (Views: 0.1ms | ActiveRecord: 1.5ms | Allocations: 4082)
+
+
+Started GET "/projects" for ::1 at 2020-06-22 14:47:25 -0500
+Processing by ProjectsController#index as */*
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+  [1m[36mTechnology Load (0.2ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."project_id" = ?[0m  [["project_id", "1"]]
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+  [1m[36mTechnology Load (0.1ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."project_id" = ?[0m  [["project_id", "2"]]
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+  [1m[36mTechnology Load (0.1ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."project_id" = ?[0m  [["project_id", "3"]]
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+Completed 200 OK in 8ms (Views: 0.1ms | ActiveRecord: 0.6ms | Allocations: 4052)
+
+
+Started GET "/projects" for ::1 at 2020-06-22 14:47:25 -0500
+Processing by ProjectsController#index as */*
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+  [1m[36mTechnology Load (0.2ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."project_id" = ?[0m  [["project_id", "1"]]
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+  [1m[36mTechnology Load (0.2ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."project_id" = ?[0m  [["project_id", "2"]]
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+  [1m[36mTechnology Load (0.3ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."project_id" = ?[0m  [["project_id", "3"]]
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+Completed 200 OK in 10ms (Views: 0.1ms | ActiveRecord: 1.0ms | Allocations: 4052)
+
+
+Started GET "/projects" for ::1 at 2020-06-22 14:47:32 -0500
+Processing by ProjectsController#index as */*
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+  [1m[36mTechnology Load (0.1ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."project_id" = ?[0m  [["project_id", "1"]]
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+  [1m[36mTechnology Load (0.1ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."project_id" = ?[0m  [["project_id", "2"]]
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+  [1m[36mTechnology Load (0.2ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."project_id" = ?[0m  [["project_id", "3"]]
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+Completed 200 OK in 10ms (Views: 0.2ms | ActiveRecord: 0.7ms | Allocations: 4052)
+
+
+Started GET "/projects" for ::1 at 2020-06-22 14:49:36 -0500
+  [1m[35m (1.7ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (11.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ProjectsController#index as */*
+  [1m[36mProject Load (0.5ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+  [1m[36mTechnology Load (5.2ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."project_id" = ?[0m  [["project_id", "1"]]
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+  [1m[36mTechnology Load (0.2ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."project_id" = ?[0m  [["project_id", "2"]]
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+  [1m[36mTechnology Load (0.1ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."project_id" = ?[0m  [["project_id", "3"]]
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+Completed 200 OK in 124ms (Views: 0.2ms | ActiveRecord: 8.9ms | Allocations: 14665)
+
+
+Started GET "/projects" for ::1 at 2020-06-22 14:52:56 -0500
+Processing by ProjectsController#index as */*
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+  [1m[36mTechnology Load (0.3ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."project_id" = ?[0m  [["project_id", "1"]]
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+  [1m[36mTechnology Load (0.3ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."project_id" = ?[0m  [["project_id", "2"]]
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+  [1m[36mTechnology Load (0.3ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."project_id" = ?[0m  [["project_id", "3"]]
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+Completed 200 OK in 16ms (Views: 0.1ms | ActiveRecord: 1.2ms | Allocations: 4071)
+
+
+Started GET "/projects" for ::1 at 2020-06-22 14:52:56 -0500
+Processing by ProjectsController#index as */*
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+  [1m[36mTechnology Load (0.2ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."project_id" = ?[0m  [["project_id", "1"]]
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+  [1m[36mTechnology Load (0.1ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."project_id" = ?[0m  [["project_id", "2"]]
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+  [1m[36mTechnology Load (0.3ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."project_id" = ?[0m  [["project_id", "3"]]
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+Completed 200 OK in 8ms (Views: 0.1ms | ActiveRecord: 0.7ms | Allocations: 4052)
+
+
+Started GET "/projects" for ::1 at 2020-06-22 14:52:58 -0500
+Processing by ProjectsController#index as */*
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+  [1m[36mTechnology Load (0.5ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."project_id" = ?[0m  [["project_id", "1"]]
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+  [1m[36mTechnology Load (0.2ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."project_id" = ?[0m  [["project_id", "2"]]
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+  [1m[36mTechnology Load (0.2ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."project_id" = ?[0m  [["project_id", "3"]]
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+Completed 200 OK in 9ms (Views: 0.1ms | ActiveRecord: 1.0ms | Allocations: 4070)
+
+
+Started GET "/projects" for ::1 at 2020-06-22 14:52:58 -0500
+Processing by ProjectsController#index as */*
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+  [1m[36mTechnology Load (0.1ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."project_id" = ?[0m  [["project_id", "1"]]
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+  [1m[36mTechnology Load (0.3ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."project_id" = ?[0m  [["project_id", "2"]]
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+  [1m[36mTechnology Load (0.2ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."project_id" = ?[0m  [["project_id", "3"]]
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+Completed 200 OK in 10ms (Views: 0.1ms | ActiveRecord: 0.8ms | Allocations: 4052)
+
+
+Started GET "/projects" for ::1 at 2020-06-22 14:53:04 -0500
+Processing by ProjectsController#index as */*
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+  [1m[36mTechnology Load (0.2ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."project_id" = ?[0m  [["project_id", "1"]]
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+  [1m[36mTechnology Load (0.2ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."project_id" = ?[0m  [["project_id", "2"]]
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+  [1m[36mTechnology Load (0.2ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."project_id" = ?[0m  [["project_id", "3"]]
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+Completed 200 OK in 8ms (Views: 0.1ms | ActiveRecord: 0.7ms | Allocations: 4070)
+
+
+Started GET "/projects" for ::1 at 2020-06-22 14:53:04 -0500
+Processing by ProjectsController#index as */*
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+  [1m[36mTechnology Load (0.1ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."project_id" = ?[0m  [["project_id", "1"]]
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+  [1m[36mTechnology Load (0.2ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."project_id" = ?[0m  [["project_id", "2"]]
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+  [1m[36mTechnology Load (0.2ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."project_id" = ?[0m  [["project_id", "3"]]
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+Completed 200 OK in 10ms (Views: 0.1ms | ActiveRecord: 0.6ms | Allocations: 4052)
+
+
+Started GET "/projects" for ::1 at 2020-06-22 14:55:21 -0500
+Processing by ProjectsController#index as */*
+  [1m[36mProject Load (0.4ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+  [1m[36mTechnology Load (0.2ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."project_id" = ?[0m  [["project_id", "1"]]
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+  [1m[36mTechnology Load (0.3ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."project_id" = ?[0m  [["project_id", "2"]]
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+  [1m[36mTechnology Load (0.2ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."project_id" = ?[0m  [["project_id", "3"]]
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+Completed 200 OK in 10ms (Views: 0.1ms | ActiveRecord: 1.1ms | Allocations: 4070)
+
+
+Started GET "/projects" for ::1 at 2020-06-22 14:55:21 -0500
+Processing by ProjectsController#index as */*
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+  [1m[36mTechnology Load (0.2ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."project_id" = ?[0m  [["project_id", "1"]]
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+  [1m[36mTechnology Load (0.2ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."project_id" = ?[0m  [["project_id", "2"]]
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+  [1m[36mTechnology Load (0.1ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."project_id" = ?[0m  [["project_id", "3"]]
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+Completed 200 OK in 8ms (Views: 0.1ms | ActiveRecord: 0.6ms | Allocations: 4052)
+
+
+Started GET "/projects" for ::1 at 2020-06-22 17:53:08 -0500
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by ProjectsController#index as */*
+  [1m[36mProject Load (0.6ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+  [1m[36mTechnology Load (0.4ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."project_id" = ?[0m  [["project_id", "1"]]
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+  [1m[36mTechnology Load (0.2ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."project_id" = ?[0m  [["project_id", "2"]]
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+  [1m[36mTechnology Load (0.2ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."project_id" = ?[0m  [["project_id", "3"]]
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+Completed 200 OK in 13ms (Views: 0.2ms | ActiveRecord: 1.5ms | Allocations: 4082)
+
+
+Started GET "/projects" for ::1 at 2020-06-22 17:53:14 -0500
+Processing by ProjectsController#index as */*
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+  [1m[36mTechnology Load (0.1ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."project_id" = ?[0m  [["project_id", "1"]]
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+  [1m[36mTechnology Load (0.2ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."project_id" = ?[0m  [["project_id", "2"]]
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+  [1m[36mTechnology Load (0.1ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."project_id" = ?[0m  [["project_id", "3"]]
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+Completed 200 OK in 8ms (Views: 0.1ms | ActiveRecord: 0.6ms | Allocations: 4052)
+
+
+Started GET "/projects" for ::1 at 2020-06-22 17:53:14 -0500
+Processing by ProjectsController#index as */*
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+  [1m[36mTechnology Load (0.1ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."project_id" = ?[0m  [["project_id", "1"]]
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+  [1m[36mTechnology Load (0.2ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."project_id" = ?[0m  [["project_id", "2"]]
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+  [1m[36mTechnology Load (0.2ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."project_id" = ?[0m  [["project_id", "3"]]
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+Completed 200 OK in 8ms (Views: 0.3ms | ActiveRecord: 0.6ms | Allocations: 4052)
+
+
+Started GET "/projects" for ::1 at 2020-06-22 17:53:30 -0500
+Processing by ProjectsController#index as */*
+  [1m[36mProject Load (0.1ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+  [1m[36mTechnology Load (0.1ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."project_id" = ?[0m  [["project_id", "1"]]
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+  [1m[36mTechnology Load (0.1ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."project_id" = ?[0m  [["project_id", "2"]]
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+  [1m[36mTechnology Load (0.2ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."project_id" = ?[0m  [["project_id", "3"]]
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+Completed 200 OK in 7ms (Views: 0.1ms | ActiveRecord: 0.6ms | Allocations: 4052)
+
+
+Started GET "/projects" for ::1 at 2020-06-22 17:53:30 -0500
+Processing by ProjectsController#index as */*
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+  [1m[36mTechnology Load (0.2ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."project_id" = ?[0m  [["project_id", "1"]]
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+  [1m[36mTechnology Load (0.3ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."project_id" = ?[0m  [["project_id", "2"]]
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+  [1m[36mTechnology Load (0.2ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."project_id" = ?[0m  [["project_id", "3"]]
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+Completed 200 OK in 11ms (Views: 0.1ms | ActiveRecord: 0.9ms | Allocations: 4052)
+
+
+Started GET "/projects" for ::1 at 2020-06-25 13:13:59 -0500
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (3.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ProjectsController#index as */*
+  [1m[36mProject Load (0.5ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+  [1m[36mTechnology Load (4.7ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."project_id" = ?[0m  [["project_id", "1"]]
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+  [1m[36mTechnology Load (0.3ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."project_id" = ?[0m  [["project_id", "2"]]
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+  [1m[36mTechnology Load (0.2ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."project_id" = ?[0m  [["project_id", "3"]]
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+Completed 200 OK in 141ms (Views: 0.4ms | ActiveRecord: 7.5ms | Allocations: 14665)
+
+
+Started GET "/projects" for ::1 at 2020-06-25 13:17:32 -0500
+Processing by ProjectsController#index as */*
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+  [1m[36mTechnology Load (0.3ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."project_id" = ?[0m  [["project_id", "1"]]
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+  [1m[36mTechnology Load (0.4ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."project_id" = ?[0m  [["project_id", "2"]]
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+  [1m[36mTechnology Load (0.2ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."project_id" = ?[0m  [["project_id", "3"]]
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+Completed 200 OK in 12ms (Views: 0.1ms | ActiveRecord: 1.1ms | Allocations: 4070)
+
+
+Started GET "/projects" for ::1 at 2020-06-25 13:17:32 -0500
+Processing by ProjectsController#index as */*
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+  [1m[36mTechnology Load (0.2ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."project_id" = ?[0m  [["project_id", "1"]]
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+  [1m[36mTechnology Load (0.2ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."project_id" = ?[0m  [["project_id", "2"]]
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+  [1m[36mTechnology Load (0.2ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."project_id" = ?[0m  [["project_id", "3"]]
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+Completed 200 OK in 10ms (Views: 0.1ms | ActiveRecord: 0.7ms | Allocations: 4052)
+
+
+Started GET "/projects" for ::1 at 2020-06-25 13:18:47 -0500
+Processing by ProjectsController#index as */*
+  [1m[36mProject Load (0.1ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+  [1m[36mTechnology Load (0.1ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."project_id" = ?[0m  [["project_id", "1"]]
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+  [1m[36mTechnology Load (0.2ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."project_id" = ?[0m  [["project_id", "2"]]
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+  [1m[36mTechnology Load (0.2ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."project_id" = ?[0m  [["project_id", "3"]]
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+Completed 200 OK in 8ms (Views: 0.2ms | ActiveRecord: 0.6ms | Allocations: 4071)
+
+
+Started GET "/projects" for ::1 at 2020-06-25 13:18:47 -0500
+Processing by ProjectsController#index as */*
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+  [1m[36mTechnology Load (0.2ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."project_id" = ?[0m  [["project_id", "1"]]
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+  [1m[36mTechnology Load (0.2ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."project_id" = ?[0m  [["project_id", "2"]]
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+  [1m[36mTechnology Load (0.1ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."project_id" = ?[0m  [["project_id", "3"]]
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+Completed 200 OK in 8ms (Views: 0.1ms | ActiveRecord: 0.7ms | Allocations: 4052)
+
+
+Started GET "/projects" for ::1 at 2020-06-25 13:19:57 -0500
+Processing by ProjectsController#index as */*
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+  [1m[36mTechnology Load (0.1ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."project_id" = ?[0m  [["project_id", "1"]]
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+  [1m[36mTechnology Load (0.2ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."project_id" = ?[0m  [["project_id", "2"]]
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+  [1m[36mTechnology Load (0.2ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."project_id" = ?[0m  [["project_id", "3"]]
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+Completed 200 OK in 9ms (Views: 0.2ms | ActiveRecord: 0.7ms | Allocations: 4070)
+
+
+Started GET "/projects" for ::1 at 2020-06-25 13:19:57 -0500
+Processing by ProjectsController#index as */*
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+  [1m[36mTechnology Load (0.2ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."project_id" = ?[0m  [["project_id", "1"]]
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+  [1m[36mTechnology Load (0.1ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."project_id" = ?[0m  [["project_id", "2"]]
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+  [1m[36mTechnology Load (0.2ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."project_id" = ?[0m  [["project_id", "3"]]
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+Completed 200 OK in 7ms (Views: 0.1ms | ActiveRecord: 0.6ms | Allocations: 4052)
+
+
+Started GET "/projects" for ::1 at 2020-06-25 13:24:06 -0500
+Processing by ProjectsController#index as */*
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+  [1m[36mTechnology Load (0.2ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."project_id" = ?[0m  [["project_id", "1"]]
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+  [1m[36mTechnology Load (0.2ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."project_id" = ?[0m  [["project_id", "2"]]
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+  [1m[36mTechnology Load (0.1ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."project_id" = ?[0m  [["project_id", "3"]]
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+Completed 200 OK in 8ms (Views: 0.1ms | ActiveRecord: 0.8ms | Allocations: 4070)
+
+
+Started GET "/projects" for ::1 at 2020-06-25 13:24:06 -0500
+Processing by ProjectsController#index as */*
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+  [1m[36mTechnology Load (0.2ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."project_id" = ?[0m  [["project_id", "1"]]
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+  [1m[36mTechnology Load (0.1ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."project_id" = ?[0m  [["project_id", "2"]]
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+  [1m[36mTechnology Load (0.1ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."project_id" = ?[0m  [["project_id", "3"]]
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+Completed 200 OK in 8ms (Views: 0.1ms | ActiveRecord: 0.6ms | Allocations: 4052)
+
+
+Started GET "/projects" for ::1 at 2020-06-25 13:24:15 -0500
+Processing by ProjectsController#index as */*
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+  [1m[36mTechnology Load (0.1ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."project_id" = ?[0m  [["project_id", "1"]]
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+  [1m[36mTechnology Load (0.2ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."project_id" = ?[0m  [["project_id", "2"]]
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+  [1m[36mTechnology Load (0.2ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."project_id" = ?[0m  [["project_id", "3"]]
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+Completed 200 OK in 9ms (Views: 0.1ms | ActiveRecord: 0.7ms | Allocations: 4052)
+
+
+Started GET "/projects" for ::1 at 2020-06-25 13:24:15 -0500
+Processing by ProjectsController#index as */*
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+  [1m[36mTechnology Load (0.2ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."project_id" = ?[0m  [["project_id", "1"]]
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+  [1m[36mTechnology Load (0.1ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."project_id" = ?[0m  [["project_id", "2"]]
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+  [1m[36mTechnology Load (0.1ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."project_id" = ?[0m  [["project_id", "3"]]
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+Completed 200 OK in 8ms (Views: 0.1ms | ActiveRecord: 0.7ms | Allocations: 4052)
+
+
+Started GET "/projects" for ::1 at 2020-06-25 13:24:33 -0500
+Processing by ProjectsController#index as */*
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+  [1m[36mTechnology Load (0.1ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."project_id" = ?[0m  [["project_id", "1"]]
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+  [1m[36mTechnology Load (0.1ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."project_id" = ?[0m  [["project_id", "2"]]
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+  [1m[36mTechnology Load (0.1ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."project_id" = ?[0m  [["project_id", "3"]]
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+Completed 200 OK in 8ms (Views: 0.1ms | ActiveRecord: 0.6ms | Allocations: 4052)
+
+
+Started GET "/projects" for ::1 at 2020-06-25 13:24:33 -0500
+Processing by ProjectsController#index as */*
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+  [1m[36mTechnology Load (0.2ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."project_id" = ?[0m  [["project_id", "1"]]
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+  [1m[36mTechnology Load (0.2ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."project_id" = ?[0m  [["project_id", "2"]]
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+  [1m[36mTechnology Load (0.1ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."project_id" = ?[0m  [["project_id", "3"]]
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+Completed 200 OK in 8ms (Views: 0.1ms | ActiveRecord: 0.6ms | Allocations: 4052)
+
+
+Started GET "/projects" for ::1 at 2020-06-25 13:24:35 -0500
+Processing by ProjectsController#index as */*
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+  [1m[36mTechnology Load (0.2ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."project_id" = ?[0m  [["project_id", "1"]]
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+  [1m[36mTechnology Load (0.2ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."project_id" = ?[0m  [["project_id", "2"]]
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+  [1m[36mTechnology Load (0.1ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."project_id" = ?[0m  [["project_id", "3"]]
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+Completed 200 OK in 9ms (Views: 0.2ms | ActiveRecord: 0.7ms | Allocations: 4052)
+
+
+Started GET "/projects" for ::1 at 2020-06-25 13:24:35 -0500
+Processing by ProjectsController#index as */*
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+  [1m[36mTechnology Load (0.2ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."project_id" = ?[0m  [["project_id", "1"]]
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+  [1m[36mTechnology Load (0.1ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."project_id" = ?[0m  [["project_id", "2"]]
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+  [1m[36mTechnology Load (0.1ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."project_id" = ?[0m  [["project_id", "3"]]
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+Completed 200 OK in 9ms (Views: 0.1ms | ActiveRecord: 0.7ms | Allocations: 4052)
+
+
+Started GET "/projects" for ::1 at 2020-06-30 13:49:28 -0500
+  [1m[35m (1.8ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (11.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ProjectsController#index as */*
+  [1m[36mProject Load (0.7ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+  [1m[36mTechnology Load (4.3ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."project_id" = ?[0m  [["project_id", "1"]]
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+  [1m[36mTechnology Load (0.2ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."project_id" = ?[0m  [["project_id", "2"]]
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+  [1m[36mTechnology Load (0.2ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."project_id" = ?[0m  [["project_id", "3"]]
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+Completed 200 OK in 146ms (Views: 0.3ms | ActiveRecord: 7.4ms | Allocations: 14665)
+
+
+Started GET "/projects" for ::1 at 2020-06-30 13:50:14 -0500
+Processing by ProjectsController#index as */*
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+  [1m[36mTechnology Load (0.1ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."project_id" = ?[0m  [["project_id", "1"]]
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+  [1m[36mTechnology Load (0.2ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."project_id" = ?[0m  [["project_id", "2"]]
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+  [1m[36mTechnology Load (0.2ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."project_id" = ?[0m  [["project_id", "3"]]
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+Completed 200 OK in 9ms (Views: 0.1ms | ActiveRecord: 0.7ms | Allocations: 4070)
+
+
+Started GET "/projects" for ::1 at 2020-06-30 13:50:14 -0500
+Processing by ProjectsController#index as */*
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+  [1m[36mTechnology Load (0.1ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."project_id" = ?[0m  [["project_id", "1"]]
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+  [1m[36mTechnology Load (0.1ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."project_id" = ?[0m  [["project_id", "2"]]
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+  [1m[36mTechnology Load (0.2ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."project_id" = ?[0m  [["project_id", "3"]]
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+Completed 200 OK in 9ms (Views: 0.2ms | ActiveRecord: 0.6ms | Allocations: 4052)
+
+
+Started GET "/projects" for ::1 at 2020-06-30 14:00:13 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by ProjectsController#index as */*
+  [1m[36mProject Load (8.6ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+  [1m[36mTechnology Load (0.6ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."project_id" = ?[0m  [["project_id", "1"]]
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+  [1m[36mTechnology Load (0.2ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."project_id" = ?[0m  [["project_id", "2"]]
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+  [1m[36mTechnology Load (0.1ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."project_id" = ?[0m  [["project_id", "3"]]
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+Completed 200 OK in 16ms (Views: 0.1ms | ActiveRecord: 9.5ms | Allocations: 4095)
+
+
+Started GET "/projects" for ::1 at 2020-06-30 14:00:13 -0500
+Processing by ProjectsController#index as */*
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+  [1m[36mTechnology Load (0.2ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."project_id" = ?[0m  [["project_id", "1"]]
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+  [1m[36mTechnology Load (0.2ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."project_id" = ?[0m  [["project_id", "2"]]
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+  [1m[36mTechnology Load (0.1ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."project_id" = ?[0m  [["project_id", "3"]]
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+Completed 200 OK in 7ms (Views: 0.1ms | ActiveRecord: 0.7ms | Allocations: 4052)
+
+
+Started GET "/projects" for ::1 at 2020-06-30 14:00:21 -0500
+Processing by ProjectsController#index as */*
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+  [1m[36mTechnology Load (0.1ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."project_id" = ?[0m  [["project_id", "1"]]
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+  [1m[36mTechnology Load (0.1ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."project_id" = ?[0m  [["project_id", "2"]]
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+  [1m[36mTechnology Load (0.1ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."project_id" = ?[0m  [["project_id", "3"]]
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+Completed 200 OK in 8ms (Views: 0.2ms | ActiveRecord: 0.6ms | Allocations: 4070)
+
+
+Started GET "/projects" for ::1 at 2020-06-30 14:00:21 -0500
+Processing by ProjectsController#index as */*
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+  [1m[36mTechnology Load (0.1ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."project_id" = ?[0m  [["project_id", "1"]]
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+  [1m[36mTechnology Load (0.1ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."project_id" = ?[0m  [["project_id", "2"]]
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+  [1m[36mTechnology Load (0.1ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."project_id" = ?[0m  [["project_id", "3"]]
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+Completed 200 OK in 6ms (Views: 0.1ms | ActiveRecord: 0.6ms | Allocations: 4052)
+
+
+Started GET "/projects" for ::1 at 2020-06-30 14:00:47 -0500
+Processing by ProjectsController#index as */*
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+  [1m[36mTechnology Load (0.1ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."project_id" = ?[0m  [["project_id", "1"]]
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+  [1m[36mTechnology Load (0.2ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."project_id" = ?[0m  [["project_id", "2"]]
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+  [1m[36mTechnology Load (0.1ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."project_id" = ?[0m  [["project_id", "3"]]
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+Completed 200 OK in 7ms (Views: 0.1ms | ActiveRecord: 0.6ms | Allocations: 4070)
+
+
+Started GET "/projects" for ::1 at 2020-06-30 14:00:49 -0500
+Processing by ProjectsController#index as */*
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+  [1m[36mTechnology Load (0.1ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."project_id" = ?[0m  [["project_id", "1"]]
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+  [1m[36mTechnology Load (0.1ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."project_id" = ?[0m  [["project_id", "2"]]
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+  [1m[36mTechnology Load (0.2ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."project_id" = ?[0m  [["project_id", "3"]]
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+Completed 200 OK in 7ms (Views: 0.1ms | ActiveRecord: 0.6ms | Allocations: 4052)
+
+
+Started GET "/projects" for ::1 at 2020-06-30 14:00:49 -0500
+Processing by ProjectsController#index as */*
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+  [1m[36mTechnology Load (0.2ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."project_id" = ?[0m  [["project_id", "1"]]
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+  [1m[36mTechnology Load (0.2ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."project_id" = ?[0m  [["project_id", "2"]]
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+  [1m[36mTechnology Load (0.2ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."project_id" = ?[0m  [["project_id", "3"]]
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+Completed 200 OK in 9ms (Views: 0.1ms | ActiveRecord: 0.9ms | Allocations: 4052)
+
+
+Started GET "/projects" for ::1 at 2020-06-30 14:00:49 -0500
+Processing by ProjectsController#index as */*
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+  [1m[36mTechnology Load (0.2ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."project_id" = ?[0m  [["project_id", "1"]]
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+  [1m[36mTechnology Load (0.2ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."project_id" = ?[0m  [["project_id", "2"]]
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+  [1m[36mTechnology Load (0.1ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."project_id" = ?[0m  [["project_id", "3"]]
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+Completed 200 OK in 9ms (Views: 0.1ms | ActiveRecord: 0.6ms | Allocations: 4052)
+
+
+Started GET "/projects" for ::1 at 2020-06-30 14:00:50 -0500
+Processing by ProjectsController#index as */*
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+  [1m[36mTechnology Load (0.1ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."project_id" = ?[0m  [["project_id", "1"]]
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+  [1m[36mTechnology Load (0.1ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."project_id" = ?[0m  [["project_id", "2"]]
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+  [1m[36mTechnology Load (0.2ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."project_id" = ?[0m  [["project_id", "3"]]
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+Completed 200 OK in 7ms (Views: 0.1ms | ActiveRecord: 0.5ms | Allocations: 4052)
+
+
+Started GET "/projects" for ::1 at 2020-06-30 14:00:50 -0500
+Processing by ProjectsController#index as */*
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+  [1m[36mTechnology Load (0.2ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."project_id" = ?[0m  [["project_id", "1"]]
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+  [1m[36mTechnology Load (0.3ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."project_id" = ?[0m  [["project_id", "2"]]
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+  [1m[36mTechnology Load (0.2ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."project_id" = ?[0m  [["project_id", "3"]]
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+Completed 200 OK in 10ms (Views: 0.1ms | ActiveRecord: 0.8ms | Allocations: 4052)
+
+
+Started GET "/projects" for ::1 at 2020-06-30 14:01:05 -0500
+Processing by ProjectsController#index as */*
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+  [1m[36mTechnology Load (0.1ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."project_id" = ?[0m  [["project_id", "1"]]
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+  [1m[36mTechnology Load (0.1ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."project_id" = ?[0m  [["project_id", "2"]]
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+  [1m[36mTechnology Load (0.2ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."project_id" = ?[0m  [["project_id", "3"]]
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+Completed 200 OK in 8ms (Views: 0.1ms | ActiveRecord: 0.6ms | Allocations: 4052)
+
+
+Started GET "/projects" for ::1 at 2020-06-30 14:01:05 -0500
+Processing by ProjectsController#index as */*
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+  [1m[36mTechnology Load (0.2ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."project_id" = ?[0m  [["project_id", "1"]]
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+  [1m[36mTechnology Load (0.2ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."project_id" = ?[0m  [["project_id", "2"]]
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+  [1m[36mTechnology Load (0.1ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."project_id" = ?[0m  [["project_id", "3"]]
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+Completed 200 OK in 10ms (Views: 0.1ms | ActiveRecord: 0.8ms | Allocations: 4052)
+
+
+Started GET "/projects" for ::1 at 2020-06-30 14:02:23 -0500
+Processing by ProjectsController#index as */*
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+  [1m[36mTechnology Load (0.2ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."project_id" = ?[0m  [["project_id", "1"]]
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+  [1m[36mTechnology Load (0.2ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."project_id" = ?[0m  [["project_id", "2"]]
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+  [1m[36mTechnology Load (0.2ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."project_id" = ?[0m  [["project_id", "3"]]
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+Completed 200 OK in 10ms (Views: 0.1ms | ActiveRecord: 0.9ms | Allocations: 4052)
+
+
+Started GET "/projects" for ::1 at 2020-06-30 14:02:23 -0500
+Processing by ProjectsController#index as */*
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+  [1m[36mTechnology Load (0.1ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."project_id" = ?[0m  [["project_id", "1"]]
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+  [1m[36mTechnology Load (0.2ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."project_id" = ?[0m  [["project_id", "2"]]
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+  [1m[36mTechnology Load (0.2ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."project_id" = ?[0m  [["project_id", "3"]]
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+Completed 200 OK in 8ms (Views: 0.1ms | ActiveRecord: 0.7ms | Allocations: 4052)
+
+
+Started GET "/projects" for ::1 at 2020-06-30 14:02:52 -0500
+Processing by ProjectsController#index as */*
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+  [1m[36mTechnology Load (0.2ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."project_id" = ?[0m  [["project_id", "1"]]
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+  [1m[36mTechnology Load (0.2ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."project_id" = ?[0m  [["project_id", "2"]]
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+  [1m[36mTechnology Load (0.2ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."project_id" = ?[0m  [["project_id", "3"]]
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+Completed 200 OK in 9ms (Views: 0.2ms | ActiveRecord: 0.7ms | Allocations: 4052)
+
+
+Started GET "/projects" for ::1 at 2020-06-30 14:02:52 -0500
+Processing by ProjectsController#index as */*
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+  [1m[36mTechnology Load (0.2ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."project_id" = ?[0m  [["project_id", "1"]]
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+  [1m[36mTechnology Load (0.2ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."project_id" = ?[0m  [["project_id", "2"]]
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+  [1m[36mTechnology Load (0.3ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."project_id" = ?[0m  [["project_id", "3"]]
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+Completed 200 OK in 9ms (Views: 0.1ms | ActiveRecord: 0.9ms | Allocations: 4052)
+
+
+Started GET "/projects" for ::1 at 2020-06-30 14:02:59 -0500
+Processing by ProjectsController#index as */*
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+  [1m[36mTechnology Load (0.2ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."project_id" = ?[0m  [["project_id", "1"]]
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+  [1m[36mTechnology Load (0.2ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."project_id" = ?[0m  [["project_id", "2"]]
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+  [1m[36mTechnology Load (0.2ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."project_id" = ?[0m  [["project_id", "3"]]
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+Completed 200 OK in 44ms (Views: 0.2ms | ActiveRecord: 0.7ms | Allocations: 4053)
+
+
+Started GET "/projects" for ::1 at 2020-06-30 14:02:59 -0500
+Processing by ProjectsController#index as */*
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+  [1m[36mTechnology Load (0.2ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."project_id" = ?[0m  [["project_id", "1"]]
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+  [1m[36mTechnology Load (0.1ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."project_id" = ?[0m  [["project_id", "2"]]
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+  [1m[36mTechnology Load (0.1ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."project_id" = ?[0m  [["project_id", "3"]]
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+Completed 200 OK in 8ms (Views: 0.1ms | ActiveRecord: 0.6ms | Allocations: 4052)
+
+
+Started GET "/projects" for ::1 at 2020-07-01 13:11:21 -0500
+  [1m[35m (11.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (12.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ProjectsController#index as */*
+  [1m[36mProject Load (0.6ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+  [1m[36mTechnology Load (0.6ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."project_id" = ?[0m  [["project_id", "1"]]
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+  [1m[36mTechnology Load (0.2ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."project_id" = ?[0m  [["project_id", "2"]]
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+  [1m[36mTechnology Load (0.2ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."project_id" = ?[0m  [["project_id", "3"]]
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+Completed 200 OK in 124ms (Views: 0.3ms | ActiveRecord: 3.2ms | Allocations: 14666)
+
+
+Started GET "/projects" for ::1 at 2020-07-01 13:16:55 -0500
+Processing by ProjectsController#index as */*
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+  [1m[36mTechnology Load (0.2ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."project_id" = ?[0m  [["project_id", "1"]]
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+  [1m[36mTechnology Load (0.3ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."project_id" = ?[0m  [["project_id", "2"]]
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+  [1m[36mTechnology Load (0.4ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."project_id" = ?[0m  [["project_id", "3"]]
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+Completed 200 OK in 16ms (Views: 0.3ms | ActiveRecord: 1.3ms | Allocations: 4071)
+
+
+Started GET "/projects" for ::1 at 2020-07-01 13:16:55 -0500
+Processing by ProjectsController#index as */*
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+  [1m[36mTechnology Load (0.1ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."project_id" = ?[0m  [["project_id", "1"]]
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+  [1m[36mTechnology Load (0.2ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."project_id" = ?[0m  [["project_id", "2"]]
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+  [1m[36mTechnology Load (0.1ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."project_id" = ?[0m  [["project_id", "3"]]
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+Completed 200 OK in 7ms (Views: 0.1ms | ActiveRecord: 0.6ms | Allocations: 4052)
+
+
+Started GET "/projects" for ::1 at 2020-07-01 14:02:12 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by ProjectsController#index as */*
+  [1m[36mProject Load (7.0ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+  [1m[36mTechnology Load (10.8ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."project_id" = ?[0m  [["project_id", "1"]]
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+  [1m[36mTechnology Load (0.2ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."project_id" = ?[0m  [["project_id", "2"]]
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+  [1m[36mTechnology Load (0.2ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."project_id" = ?[0m  [["project_id", "3"]]
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+Completed 200 OK in 26ms (Views: 0.1ms | ActiveRecord: 18.3ms | Allocations: 4094)
+
+
+Started GET "/projects" for ::1 at 2020-07-01 14:02:12 -0500
+Processing by ProjectsController#index as */*
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+  [1m[36mTechnology Load (0.2ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."project_id" = ?[0m  [["project_id", "1"]]
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+  [1m[36mTechnology Load (0.2ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."project_id" = ?[0m  [["project_id", "2"]]
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+  [1m[36mTechnology Load (0.2ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."project_id" = ?[0m  [["project_id", "3"]]
+  ↳ app/controllers/ProjectsController.rb:4:in `index'
+Completed 200 OK in 9ms (Views: 0.1ms | ActiveRecord: 0.8ms | Allocations: 4052)
+
+
