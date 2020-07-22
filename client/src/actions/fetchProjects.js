@@ -1,7 +1,7 @@
 const fetchProjects = () => {
     return (dispatch) => {
         dispatch({ type: 'START_ANIMATION' });
-        const url = "http://localhost:3001/projects";
+        const url = "https://christiancain-api.herokuapp.com/projects";
 
         fetch(url)
             .then(resp => resp.json())
