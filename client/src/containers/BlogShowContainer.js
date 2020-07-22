@@ -36,12 +36,12 @@ class BlogShowComponent extends Component {
                     });
 
                     // Remove Medium GIFs
-                    // const aEls = document.querySelectorAll("#blog-content a");
-                    // aEls.forEach(a => {
-                    //     if (a.href.includes("medium")) {
-                    //         a.remove();
-                    //     }
-                    // })
+                    const aEls = document.querySelectorAll("#blog-content a");
+                    aEls.forEach(a => {
+                        if (a.href.includes("medium")) {
+                            a.remove();
+                        }
+                    })
 
                     this.props.stopAnimation();
                 })
