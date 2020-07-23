@@ -1,8 +1,9 @@
 import React from 'react';
 import { ReactComponent as GithubSVG } from '../images/github.svg';
+import { ReactComponent as YoutubeSVG } from '../images/youtube.svg';
 
-const generateTechnologies = project => {
-    return ((project) ? project.technologies : [{title: "Loading"}]).map((t, i) => {
+const generateTechnologies = technologies => {
+    return ((technologies) ? technologies : [{title: "Loading"}]).map((t, i) => {
         return (
             <li key={i} >
                 <span key={i} className="technology">{t.title}</span>
@@ -11,20 +12,32 @@ const generateTechnologies = project => {
     })
 }
 
+const generateLinks = ({github, heroku, youtube}) => {
+    const githubLink = () => <a href={github} target="_blank" rel="noopener noreferrer" ><GithubSVG className="svg-link" /></a>;
+    const herokuLink = () => <a href={heroku} target="_blank" rel="noopener noreferrer" ><GithubSVG className="svg-link" /></a>;
+    const youtubeLink = () => <a href={youtube} target="_blank" rel="noopener noreferrer" ><YoutubeSVG className="svg-link" /></a>;
+
+    return (
+        <div>
+            {github ? githubLink() : ""}
+            {heroku ? herokuLink() : ""}
+            {youtube ? youtubeLink() : ""}
+        </div>
+    )
+}
+
 const ProjectInfo = ({project}) => {
 
     return (
         <div id="carousel-info-inside">
             <div id="carousel-links">
                 <h2>{(project) ? project.title : ""}</h2>
-                <a href={(project) ? project.github : ""} target="_blank" rel="noopener noreferrer" >
-                    <GithubSVG id="svg-github" />
-                </a>
+                {project ? generateLinks(project) : ""}
             </div>
             <p>{(project) ? project.description : ""}</p>
             <div id="carousel-technologies">
                 <ul>
-                    {generateTechnologies(project)}
+                    {project ? generateTechnologies(project.technologies) : ""}
                 </ul>
             </div>
         </div>

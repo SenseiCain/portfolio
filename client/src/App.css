@@ -256,6 +256,10 @@ nav > ul > li > a:hover {
   padding: 0px 20px;
 }
 
+#carousel-info h2 {
+  padding-right: 10px;
+}
+
 #carousel-info-inside {
   position: absolute;
 }
@@ -270,14 +274,18 @@ nav > ul > li > a:hover {
   text-decoration: none;
 }
 
-#svg-github {
+.svg-link {
   width: 20px;
   height: 20px;
-  padding: 2px 0px 0px 10px;
+  padding: 2px 5px 0px 0px;
   cursor: pointer;
 }
 
-#github-inside {
+.svg-youtube {
+  height: 100%;
+}
+
+.svg-link-inside {
   fill: var(--accent-color);
 }
 
