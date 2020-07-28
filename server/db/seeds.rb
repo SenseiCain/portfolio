@@ -3,7 +3,7 @@ clickyz = Project.create(
     description: "Interactive mechanical keyboard editor. This was made using a custom 3D keyboard model and p5.js for interactivity. A personal project displaying my appreciation for hand made things.",
     img: "https://raw.githubusercontent.com/SenseiCain/clickyz/master/preview.png",
     github: "https://github.com/SenseiCain/clickyz",
-    youtube: "https://www.youtube.com/watch?v=FTfg0QWyWSo&t=9s",
+    youtube: "https://www.youtube.com/watch?v=zMgoFB-pZOo",
     heroku: ""
 )
 clickyz.technologies.build([{title: "Sinatra"}, {title: "WEBGL"}, {title: "p5.js"}, {title: "Google Cloud"}])
