@@ -28,7 +28,7 @@ class Bio extends Component {
                                 </a>
                             </li>
                             <li>
-                                <a href="https://github.com/SenseiCain" target="_blank" rel="noopener noreferrer">
+                                <a href="https://learn.co/christiancain/resume" target="_blank" rel="noopener noreferrer">
                                     Resume
                                 </a>
                             </li>
