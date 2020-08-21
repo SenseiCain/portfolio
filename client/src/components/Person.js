@@ -10,7 +10,7 @@ const Person = props => {
     }
 
     return (
-        <svg className="svg-person" viewBox="0 0 800 360" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" xmlSpace="preserve">
+        <svg id="person" viewBox="0 0 800 360" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" xmlSpace="preserve">
             <g id="Desk" transform="matrix(1.00108,0,0,0.889785,-1.29301,-174.939)">
                 <path className="desk-item" d="M800.427,601.198L708.577,497.859L92.796,497.859L0.945,601.198L0.945,601.2L800.427,601.2L800.427,601.198Z" style={{fill: "rgb(235,235,235)"}}/>
             </g>

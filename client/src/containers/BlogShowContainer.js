@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { Redirect } from 'react-router-dom';
-import Footer from '../components/Footer';
 
 class BlogShowComponent extends Component {
     constructor() {
@@ -55,20 +54,17 @@ class BlogShowComponent extends Component {
         } else {
 
             return (
-                <div className="shadow">
-                    <div id="blog-show">
-                        <div id="blog-title">
-                            <h1 dangerouslySetInnerHTML={{__html: this.state.html.title}}></h1>
-                            <h6 dangerouslySetInnerHTML={{__html: this.state.html.pubDate}}></h6>
-                        </div>
+                <section id="blog-show" className="wrapper-inside">
+                    <div className="page-inner">
+                        <h1 dangerouslySetInnerHTML={{__html: this.state.html.title}}></h1>
+                        <h6 dangerouslySetInnerHTML={{__html: this.state.html.pubDate}}></h6>
                         <div dangerouslySetInnerHTML={{__html: this.state.html.content}}></div>
-                        <Link to={"/blog"} className="back-btn">
+                        <Link to={"/blog"} className="clickable">
                             Back
                         </Link>
                     </div>
-                    <Footer />
-                </div>
-            )
+                </section>
+        )
         }
     }
 }

@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg id="svg-mac" viewBox="0 0 100 83" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" xmlSpace="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+<svg width="100%" height="100%" viewBox="0 0 100 83" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
     <path id="monitor" d="M99.981,2.312C99.884,1.021 98.816,0 97.5,0L2.5,0C1.184,0 0.116,1.021 0.019,2.312L0,66.5C0,67.881 1.119,69 2.5,69L97.5,69C98.881,69 100,67.881 100,66.5L99.981,2.312ZM96,57L4,57L4,4L96,4L96,57Z" style="fill-rule:nonzero;"/>
     <path id="base" d="M66,81C62,80 61,77 61,73L61,72L39,72L39,73C39,77 38,80 34,81C33.03,81.242 33,83 34,83L66,83C67,83 66.97,81.242 66,81Z" style="fill-rule:nonzero;"/>
-    <foreignObject id="screen" x="4" y="4" width="92" height="53" />
 </svg>

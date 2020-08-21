@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import ProjectCarousel from '../components/ProjectCarousel';
+import ProjectList from '../components/ProjectList';
 import fetchProjects from '../actions/fetchProjects';
+import { Responsive } from 'responsive-react';
 
 class ProjectContainer extends Component {
 
@@ -11,18 +13,22 @@ class ProjectContainer extends Component {
 
     render() {
         return (
-            <div>
-                <div className="projects-title">
-                    <h1>Projects</h1>
-                </div>
-                <div className="projects-main">
+            <section id="projects">
+                <h1>Projects</h1>
+                <Responsive
+                    displayIn={["Laptop", "Tablet"]}>
                     <ProjectCarousel 
                         project={this.props.projects[this.props.active]}
                         nextProject={this.props.nextProject}
                         prevProject={this.props.prevProject}
                         activeIndex={this.props.active} />
-                </div>
-            </div>
+                </Responsive>
+                <Responsive
+                    displayIn={["Mobile"]}>
+                    <ProjectList
+                        projects={this.props.projects} />
+                </Responsive>
+            </section>
         )
     }
 }

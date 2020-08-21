@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import Footer from '../components/Footer';
 import emailjs from 'emailjs-com';
 
 class ContactContainer extends Component {
@@ -9,7 +8,40 @@ class ContactContainer extends Component {
         this.state = {
             address: '',
             subject: '',
-            message: ''
+            message: '',
+            height: 'auto'
+        }
+
+        this.updateComponentSize = this.updateComponentSize.bind(this)
+    }
+
+    componentDidMount() {
+        this.updateComponentSize();
+        window.addEventListener('resize', this.updateComponentSize, false);
+    }
+
+    componentWillUnmount() {
+        console.log('contact unmounted')
+        window.removeEventListener('resize', this.updateComponentSize, false);
+    }
+
+    updateComponentSize() {
+        const headerHeight = document.getElementById('header').offsetHeight;
+        const navHeight = document.getElementById('navbar').offsetHeight;
+        const footerHeight = document.getElementsByTagName('footer')[0].offsetHeight;
+
+        const desiredHeight = window.innerHeight - headerHeight - navHeight - footerHeight;
+
+        const contactHeight = document.getElementById('contact-inner').offsetHeight;
+
+        if (contactHeight + headerHeight + navHeight + footerHeight <= window.innerHeight) {
+            this.setState({
+                height: desiredHeight - 60
+            })
+        } else {
+            this.setState({
+                height: 'auto'
+            })
         }
     }
 
@@ -40,32 +72,36 @@ class ContactContainer extends Component {
 
     render() {
         return (
-            <div className="shadow drop">
-                <div className="contact-container">
+            <section id="contact" className="wrapper-inside">
+                <div 
+                    id="contact-inner"
+                    className="page-inner"
+                    style={{height: this.state.height}}>
                     <form onSubmit={this.handleSubmit}>
-                        <input 
-                            name="address"
-                            type="text" 
-                            value={this.state.address}
-                            placeholder="Email address"
-                            onChange={this.handleChange}/>
-                        <input 
-                            name="subject"
-                            type="text" 
-                            value={this.state.subject}
-                            placeholder="Subject"
-                            onChange={this.handleChange}/>
-                        <textarea 
-                            name="message"
-                            value={this.state.message}
-                            placeholder="Message..."
-                            rows="10"
-                            onChange={this.handleChange}/>
-                        <input type="submit" />
+                        <div id="contact-inputs">
+                            <input 
+                                name="address"
+                                type="text" 
+                                value={this.state.address}
+                                placeholder="Email address"
+                                onChange={this.handleChange}/>
+                            <input 
+                                name="subject"
+                                type="text" 
+                                value={this.state.subject}
+                                placeholder="Subject"
+                                onChange={this.handleChange}/>
+                            <textarea 
+                                name="message"
+                                value={this.state.message}
+                                placeholder="Message..."
+                                rows="10"
+                                onChange={this.handleChange}/>
+                            </div>
+                            <input type="submit" className="clickable" />
                     </form>
                 </div>
-                <Footer />
-            </div>
+            </section>
         )
     }
 }

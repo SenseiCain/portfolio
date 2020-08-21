@@ -13,14 +13,12 @@ class Header extends Component {
 
     render() {
         return (
-            <div className="wrapper">
-                <div className="header-container">
-                    <SkateboardSVG className="svg-skateboard-1" />
-                    <SkateboardSVG className="svg-skateboard-2" />
-                    <Person isLoading={this.props.isLoading} />
-                    <LampSVG className="svg-lamp" />
-                </div>
-            </div>
+            <section id="header" className="wrapper">
+                <SkateboardSVG id="skateboard-1" className="skateboard show-desktop" />
+                <SkateboardSVG id="skateboard-2" className="skateboard show-desktop" />
+                <Person isLoading={this.props.isLoading} />
+                <LampSVG id="lamp" className="show-desktop" />
+            </section>
         )
     }
 }

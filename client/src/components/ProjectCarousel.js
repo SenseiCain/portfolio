@@ -26,38 +26,29 @@ class ProjectCarousel extends Component {
 
     render() {
         return (
-            <div id="carousel-container">
-                <div id="arrow-left">
-                    <LeftArrow 
-                        className="svg-arrow"
-                        onClick={this.handlePrevious}
-                    />
-                </div>
+            <div id="carousel">
+                <LeftArrow 
+                    className="arrow"
+                    onClick={this.handlePrevious}
+                />
                 <div id="carousel-main">
-                    <div id="carousel-inside">
-                        <div id="carousel-computer">
-                            <Mac 
-                                src={(this.props.project) ? this.props.project.img : "" } 
-                                activeIndex={this.props.activeIndex}
-                                direction={this.state.direction} />
-                        </div>
-                        <TransitionGroup 
-                            id="carousel-info">
-                            <CSSTransition
-                                classNames="fadeDrop"
-                                key={this.props.activeIndex} 
-                                timeout={400}>
-                                <ProjectInfo project={this.props.project} />
-                            </CSSTransition>
-                        </TransitionGroup>
-                    </div>
+                    <Mac 
+                        src={(this.props.project) ? this.props.project.img : "" } 
+                        activeIndex={this.props.activeIndex}
+                        direction={this.state.direction} />
+                    <TransitionGroup id="carousel-info">
+                        <CSSTransition
+                            classNames="fadeDrop"
+                            key={this.props.activeIndex} 
+                            timeout={400}>
+                            <ProjectInfo project={this.props.project} />
+                        </CSSTransition>
+                    </TransitionGroup>
                 </div>
-                <div id="arrow-right" >
-                    <RightArrow 
-                        className="svg-arrow"
-                        onClick={this.handleNext}
-                    />
-                </div>
+                <RightArrow 
+                    className="arrow"
+                    onClick={this.handleNext}
+                />
             </div>
 
         )

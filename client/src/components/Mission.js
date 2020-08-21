@@ -2,15 +2,13 @@ import React from 'react';
 
 const Mission = () => {
     return (
-        <div>
-            <div className="mission-container">
-                <p>
-                    Creative young professional with a knack for tinkering and solving problems.
-                    I recently graduated from Flatiron School where I specialized in technologies 
-                    such as Ruby on Rails, JS, and React. 
-                    I'm currently looking for my next challenge.
-                </p>
-            </div>
+        <div id="mission" className="wrapper-inside">
+            <p>
+                Creative young professional with a knack for tinkering and solving problems.
+                I am a recent <span>Flatiron School</span> grad with a strong focus in both <span>front end</span> & <span>back end</span> development.
+                I'm coming from a background in cyber security,
+                and am currently looking to make my first step towards a career in software engineering.
+            </p>
         </div>
     )
 }

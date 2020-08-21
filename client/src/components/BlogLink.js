@@ -5,10 +5,10 @@ const BlogLink = props => {
     const linkParam = props.blog.title.split(' ').join('-').toLowerCase();
 
     return (
-        <div className="blog-item" onClick={() => props.setActiveBlog(props.blog.title)}>
-            <Link 
-                to={`blog/${linkParam}`}
-                className="blog-item-link">
+        <div 
+            className="blog-link"
+            onClick={() => props.setActiveBlog(props.blog.title)}>
+            <Link to={`blog/${linkParam}`}>
                 {props.blog.title}
             </Link>
         </div>

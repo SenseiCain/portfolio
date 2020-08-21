@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
-import './App.css';
 
 import ScrollToTop from './components/ScrollToTop';
 import HomeContainer from './containers/HomeContainer';
@@ -11,25 +10,27 @@ import NavBar from './components/NavBar';
 
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import BlogShowContainer from './containers/BlogShowContainer';
+import Footer from './components/Footer';
 
 class App extends Component {
 
   render() {
     return (
       <Router>
-        <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto+Condensed&display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Poppins&amp;family=Roboto+Condensed&amp;display=swap" rel="stylesheet" />
         <ScrollToTop />
 
         <HeaderContainer />
-        <NavBar />
+        <NavBar className="shadow"/>
+        <div id="box-shadow-hide"></div>
 
         <Route render={({location}) => (
-          <TransitionGroup className="wrapper">
+          <TransitionGroup className="wrapper shadow" >
             <CSSTransition
-              classNames="fade"
               key={location.key}
-              timeout={500}>
-              <Switch>
+              classNames="fade"
+              timeout={400}>
+              <Switch location={location}>
                 <Route exact path="/" component={HomeContainer} />
                 <Route exact path="/blog" component={BlogContainer} />
                 <Route path="/contact" component={ContactContainer} />
@@ -39,6 +40,8 @@ class App extends Component {
           </TransitionGroup>
         )} />
         
+        <Footer />
+
       </Router>
     )
   }

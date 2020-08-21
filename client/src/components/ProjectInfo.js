@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import { ReactComponent as GithubSVG } from '../images/github.svg';
 import { ReactComponent as YoutubeSVG } from '../images/youtube.svg';
 
@@ -18,11 +18,11 @@ const generateLinks = ({github, heroku, youtube}) => {
     const youtubeLink = () => <a href={youtube} target="_blank" rel="noopener noreferrer" ><YoutubeSVG className="svg-link" /></a>;
 
     return (
-        <div>
-            {github ? githubLink() : ""}
-            {heroku ? herokuLink() : ""}
-            {youtube ? youtubeLink() : ""}
-        </div>
+        <Fragment>
+            <li>{github ? githubLink() : ""}</li>
+            <li>{heroku ? herokuLink() : ""}</li>
+            <li>{youtube ? youtubeLink() : ""}</li>
+        </Fragment>
     )
 }
 
@@ -30,7 +30,7 @@ const ProjectInfo = ({project}) => {
 
     return (
         <div id="carousel-info-inside">
-            <div id="carousel-links">
+            <div id="carousel-title">
                 <h2>{(project) ? project.title : ""}</h2>
                 {project ? generateLinks(project) : ""}
             </div>

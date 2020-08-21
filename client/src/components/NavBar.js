@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom';
 
 class NavBar extends Component {
     componentDidMount() {
-        const navbar = document.getElementById("nav-container");
+        const navbar = document.getElementById("navbar");
         const sticky = navbar.offsetTop;
 
         window.onscroll = () => {
@@ -17,8 +17,7 @@ class NavBar extends Component {
 
     render() {
         return (
-            <div id="nav-container" className="nav-container raise">
-                <nav className="wrapper raise">
+            <nav id="navbar">
                     <ul>
                         <li>
                             <NavLink to="/">Home</NavLink>
@@ -30,8 +29,7 @@ class NavBar extends Component {
                             <NavLink to="/contact">Contact</NavLink>
                         </li>
                     </ul>
-                </nav>
-            </div>
+            </nav>
         )
     } 
 }
