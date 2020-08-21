@@ -792,7 +792,7 @@ footer span {
     }
 
     #blog-show img {
-        width: 30vh;
+        height: 30vh;
         margin: 0px;
         padding: 30px 10px;
     }
@@ -800,7 +800,6 @@ footer span {
     footer {
         margin: 0 auto;
         max-width: 980px;
-        width: calc(100% - 20px) !important;
     }
     
 
