@@ -792,7 +792,7 @@ footer span {
     }
 
     #blog-show img {
-        width: calc(100vw - 20px);
+        width: 30vh;
         margin: 0px;
         padding: 30px 10px;
     }
