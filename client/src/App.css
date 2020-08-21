@@ -143,7 +143,6 @@ img {
 }
 
 .screen img {
-    position: absolute;
     padding: 0px;
     width: 92px !important;
     height: 53px !important;
@@ -512,6 +511,7 @@ nav li a:hover {
     y: 4px;
     width: 92px;
     height: 53px;
+    position: relative;
 }
 
 #screen img {
@@ -626,6 +626,8 @@ nav li a:hover {
 #blog-show figure {
     display: flex;
     justify-content: center;
+    margin: 0px;
+    padding: 0px;
 }
 
 /* skills */
