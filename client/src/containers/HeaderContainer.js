@@ -3,14 +3,8 @@ import { connect } from 'react-redux';
 import { ReactComponent as LampSVG} from '../images/lamp.svg';
 import { ReactComponent as SkateboardSVG } from '../images/skateboard.svg';
 import Person from '../components/Person';
-import { updateSVGColors } from '../scripts/Helper';
 
 class Header extends Component {
-
-    componentDidMount() {
-        updateSVGColors();
-    }
-
     render() {
         return (
             <section id="header" className="wrapper">

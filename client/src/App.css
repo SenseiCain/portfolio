@@ -265,6 +265,20 @@ a, p {
     z-index: 3;
 }
 
+#chair {
+    fill: var(--secondary-color);
+}
+
+.shirt-item {
+    fill: var(--primary-color);
+    stroke-width: 2px;
+    stroke: var(--primary-color);
+}
+
+.laptop-item {
+    fill: var(--secondary-color);
+}
+
 #loading-container {
     fill: white;
 }
@@ -296,6 +310,10 @@ a, p {
     }
   }
 
+.mug-item {
+    fill: var(--accent-color);
+}
+
 #lamp {
     width: 80px;
     height: 280px;
@@ -305,7 +323,7 @@ a, p {
 }
 
 .light-bulb {
-    fill: var(--accent-color)
+    fill: var(--accent-color);
 }
 
 .skateboard {
@@ -317,11 +335,13 @@ a, p {
 #skateboard-1 {
     left: 60px;
     bottom: 30px;
+    fill: var(--accent-color);
 }
 
 #skateboard-2 {
     left: 120px;
     bottom: 70px;
+    fill: var(--secondary-color);
 }
 
 .show-desktop {
