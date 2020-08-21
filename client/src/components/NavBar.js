@@ -8,9 +8,18 @@ class NavBar extends Component {
 
         window.onscroll = () => {
             if (window.pageYOffset >= sticky) {
-                navbar.classList.add("sticky")
+                navbar.classList.add("sticky");
+
+                if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+                    document.body.style.marginTop = `${(navbar.clientHeight)}px`;
+                }
+                
             } else {
                 navbar.classList.remove("sticky");
+
+                if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+                    document.body.style.marginTop = "0px";
+                }
             }
         };
     }
