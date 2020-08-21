@@ -1,4 +1,8 @@
 *.log
 
 tmp/pids/*
+<<<<<<< HEAD
 tmp/cache/*
+=======
+tmp/cache/*
+>>>>>>> 6e7fdde5e4122d960beffcdade484c89cd6cd223
