@@ -20,12 +20,13 @@ class BlogContainer extends Component {
     }
 
     componentDidMount() {
-        this.updateComponentSize();
-        window.addEventListener('resize', this.updateComponentSize, false);
-
+        
         if (this.props.blogs.length === 0) {
             this.props.fetchBlogs();
         }
+
+        this.updateComponentSize();
+        window.addEventListener('resize', this.updateComponentSize, false);
     }
 
     componentWillUnmount() {
