@@ -25,8 +25,8 @@ class BlogContainer extends Component {
             this.props.fetchBlogs();
         }
 
-        this.updateComponentSize();
-        window.addEventListener('resize', this.updateComponentSize, false);
+        // this.updateComponentSize();
+        // window.addEventListener('resize', this.updateComponentSize, false);
     }
 
     componentWillUnmount() {
