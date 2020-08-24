@@ -21,7 +21,6 @@ class ContactContainer extends Component {
     }
 
     componentWillUnmount() {
-        console.log('contact unmounted')
         window.removeEventListener('resize', this.updateComponentSize, false);
     }
 
