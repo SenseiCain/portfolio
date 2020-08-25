@@ -2,7 +2,7 @@
 
 ## Screenshot
 
-<img src="https://raw.githubusercontent.com/SenseiCain/portfolio/master/scrrenshot.png" width="500px" />
+<img src="https://raw.githubusercontent.com/SenseiCain/portfolio/master/screenshot.png" width="500px" />
 
 ## APIs
 
