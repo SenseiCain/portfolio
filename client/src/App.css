@@ -636,7 +636,7 @@ nav li a:hover {
 
 #blog-show img {
     max-height: 50vh !important;
-    max-width: calc(100vw - 20px);
+    max-width: calc(100% - 20px);
     margin: 0px;
     padding: 10px;
 }
