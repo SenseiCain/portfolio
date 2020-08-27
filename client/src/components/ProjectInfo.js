@@ -31,10 +31,10 @@ const ProjectInfo = ({project}) => {
     return (
         <div id="carousel-info-inside">
             <div id="carousel-title">
-                <h2>{(project) ? project.title : ""}</h2>
+                <h2>{(project) ? project.title : "Loading..."}</h2>
                 {project ? generateLinks(project) : ""}
             </div>
-            <p>{(project) ? project.description : ""}</p>
+            <p>{(project) ? project.description : "Loading..."}</p>
             <div id="carousel-technologies">
                 <ul>
                     {project ? generateTechnologies(project.technologies) : ""}

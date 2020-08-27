@@ -37,7 +37,8 @@ const ProjectList = ({projects}) => {
     }
 
     const conditionalRender = projects => {
-        if (projects) {
+
+        if (!!projects.length) {
             return projects.map((p,i) => generateProject(p, i))
         } else {
             return (
