@@ -11,7 +11,13 @@ const SkillsContainer = () => {
         return Object.keys(skills).map((k, i) => {
             return (
                 <div key={i} className="skill-card">
-                    <h2>{k}</h2>
+                    <div className="skill-title">
+                        <h2>{k}</h2>
+                        <div className="skill-wave">
+                            <div></div>
+                            <div></div>
+                        </div>
+                    </div>
                     <ul>
                         {skills[k].map((el, i) => <li key={i}>{el}</li>)}
                     </ul>

@@ -534,43 +534,126 @@ nav li a:hover {
     height: 100%;
 }
 
-/* about */
-#about {
+/* skills */
+
+#skills {
+    width: 100%;
+    padding: 40px 0px;
+}
+
+#skills h1 {
+    padding: 10px 0px;
+}
+
+#skill-cards {
     display: flex;
-    flex-direction: column;
-}
-
-#about h1 {
-    margin-bottom: 30px;
-}
-
-#about-content {
-    padding: 0px 0px 10px 0px;
-    margin: 0px;
-}
-
-#about-content img {
-    width: 40vw;
-    max-width: 220px;
-    margin: 0px 30px 10px 0px;
-    padding: 0px;
+    justify-content: space-around;
     border-radius: 10px;
-    float: left;
+    flex-wrap: wrap;
+    padding: 0px 30px;
 }
 
-#about-content p {
-    padding-top: 0px;
-    margin-top: 0px;
+.skill-card {
+    width: 100%;
+    max-width: 180px;
+    min-width: 100px;
+    min-height: 210px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px lightgrey;
+    margin: 0px 10px 20px 10px;
+    overflow: hidden;
+    transition: all ease 300ms;
 }
 
-#about ul {
-    margin-top: 20px;
+.skill-card:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 0px 15px lightgrey;
 }
 
-#about ul li {
-    display: inline;
-    padding: 0px 10px 0px 0px;
+.skill-title {
+    background-color: var(--primary-color);
+    position: relative;
+}
+
+.skill-wave {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    transform: translate(0%, -100%);
+}
+.skill-wave div {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.skill-wave div:nth-child(1) {
+    background-color: transparent;
+}
+
+.skill-wave div:nth-child(2) {
+    background-color: var(--secondary-color);
+    animation: wave 3s ease-in-out infinite;
+    animation-play-state: paused;
+}
+
+.skill-card:hover div:nth-child(2) {
+    animation-play-state: running !important;
+}
+
+.skill-title h2 {
+    border-bottom: 1px solid white;
     margin: 0px;
+    padding: 0px;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+}
+
+.skill-card ul {
+    padding: 10px;
+}
+
+.skill-card li {
+    margin-bottom: 3px;
+}
+
+#skills-border {
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(to right, transparent 0%, var(--secondary-color) 30%, var(--secondary-color) 70%, transparent 100%)
+}
+
+@keyframes wave {
+    0%,
+    100% {
+        clip-path: polygon(
+        0% 45%,
+        15% 45%,
+        32% 50%,
+        54% 60%,
+        70% 61%,
+        84% 59%,
+        100% 52%,
+        100% 100%,
+        0% 100%
+        );
+    }
+    50% {
+        clip-path: polygon(
+        0 60%,
+        16% 65%,
+        34% 66%,
+        51% 62%,
+        67% 50%,
+        84% 45%,
+        100% 46%,
+        100% 100%,
+        0% 100%
+        );
+    }
 }
 
 /* blog */
@@ -650,64 +733,43 @@ nav li a:hover {
     padding: 10px;
 }
 
-/* skills */
-
-#skills {
-    width: 100%;
-    padding: 40px 0px;
-}
-
-#skills h1 {
-    padding: 10px 0px;
-}
-
-#skill-cards {
+/* about */
+#about {
     display: flex;
-    justify-content: space-around;
-    border-radius: 10px;
-    flex-wrap: wrap;
-    padding: 0px 30px;
+    flex-direction: column;
 }
 
-.skill-card {
-    width: 100%;
-    max-width: 180px;
-    min-width: 100px;
-    min-height: 210px;
-    border-radius: 10px;
-    box-shadow: 0px 0px 5px lightgrey;
-    margin: 0px 10px 20px 10px;
-    overflow: hidden;
-    transition: all ease 300ms;
+#about h1 {
+    margin-bottom: 30px;
 }
 
-.skill-card:hover {
-    transform: scale(1.1);
-    box-shadow: 0px 0px 15px lightgrey;
-}
-
-.skill-card h2 {
-    border-bottom: 1px solid white;
+#about-content {
+    padding: 0px 0px 10px 0px;
     margin: 0px;
+}
+
+#about-content img {
+    width: 40vw;
+    max-width: 220px;
+    margin: 0px 30px 10px 0px;
     padding: 0px;
-    background-color: var(--secondary-color);
-    color: white;
-    padding: 10px;
-    text-align: center;
+    border-radius: 10px;
+    float: left;
 }
 
-.skill-card ul {
-    padding: 10px;
+#about-content p {
+    padding-top: 0px;
+    margin-top: 0px;
 }
 
-.skill-card li {
-    margin-bottom: 3px;
+#about ul {
+    margin-top: 20px;
 }
 
-#skills-border {
-    width: 100%;
-    height: 3px;
-    background: linear-gradient(to right, transparent 0%, var(--secondary-color) 30%, var(--secondary-color) 70%, transparent 100%)
+#about ul li {
+    display: inline;
+    padding: 0px 10px 0px 0px;
+    margin: 0px;
 }
 
 /* footer */
