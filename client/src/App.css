@@ -534,23 +534,22 @@ nav li a:hover {
     height: 100%;
 }
 
-/* bio */
-#bio {
-    margin: 10px 0px 20px 0px;
+/* about */
+#about {
     display: flex;
     flex-direction: column;
 }
 
-#bio h1 {
+#about h1 {
     margin-bottom: 30px;
 }
 
-#bio-content {
+#about-content {
     padding: 0px 0px 10px 0px;
     margin: 0px;
 }
 
-#bio-content img {
+#about-content img {
     width: 40vw;
     max-width: 220px;
     margin: 0px 30px 10px 0px;
@@ -559,16 +558,16 @@ nav li a:hover {
     float: left;
 }
 
-#bio-content p {
+#about-content p {
     padding-top: 0px;
     margin-top: 0px;
 }
 
-#bio ul {
+#about ul {
     margin-top: 10px;
 }
 
-#bio ul li {
+#about ul li {
     display: inline;
     padding: 0px 10px 0px 0px;
     margin: 0px;
