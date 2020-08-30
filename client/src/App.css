@@ -645,11 +645,7 @@ nav li a:hover {
 
 #skills {
     width: 100%;
-    padding: 40px 0px 40px 0px;
-}
-
-#skills-inside {
-    padding-bottom: 40px;
+    padding: 40px 0px;
 }
 
 #skills h1 {
@@ -703,33 +699,6 @@ nav li a:hover {
     width: 100%;
     height: 3px;
     background: linear-gradient(to right, transparent 0%, var(--secondary-color) 30%, var(--secondary-color) 70%, transparent 100%)
-}
-
-/* contact */
-#contact {
-   margin: 0px;
-}
-
-#contact form {
-    background-color: var(--light-color);
-    border-radius: 15px;
-    padding: 10px;
-    max-width: 600px;
-    margin: auto;
-}
-
-#contact input, #contact textarea {
-    margin-bottom: 5px;
-}
-
-#contact-inputs {
-    display: flex;
-    flex-direction: column;
-}
-
-#contact input[type="submit"] {
-    display: block;
-    margin: auto;
 }
 
 /* footer */

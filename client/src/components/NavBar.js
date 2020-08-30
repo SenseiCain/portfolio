@@ -35,7 +35,7 @@ class NavBar extends Component {
                             <NavLink to="/blog">Blog</NavLink>
                         </li>
                         <li>
-                            <NavLink to="/contact">Contact</NavLink>
+                            <NavLink to="/about">About</NavLink>
                         </li>
                     </ul>
             </nav>

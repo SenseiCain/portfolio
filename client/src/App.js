@@ -4,9 +4,9 @@ import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import ScrollToTop from './components/ScrollToTop';
 import HomeContainer from './containers/HomeContainer';
 import BlogContainer from './containers/BlogContainer';
-import ContactContainer from './containers/ContactContainer';
 import HeaderContainer from './containers/HeaderContainer';
 import NavBar from './components/NavBar';
+import AboutContainer from './containers/AboutContainer';
 
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import BlogShowContainer from './containers/BlogShowContainer';
@@ -33,7 +33,7 @@ class App extends Component {
               <Switch location={location}>
                 <Route exact path="/" component={HomeContainer} />
                 <Route exact path="/blog" component={BlogContainer} />
-                <Route path="/contact" component={ContactContainer} />
+                <Route path="/about" component={AboutContainer} />
                 <Route path="/blog/:blogTitle" component={BlogShowContainer} />
             </Switch>
             </CSSTransition>

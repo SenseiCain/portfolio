@@ -28,7 +28,6 @@ const SkillsContainer = () => {
                     {generateSkills()}
                 </div>
             </div>
-            <div id="skills-border" className="wrapper"></div>
         </section>
     )
 }

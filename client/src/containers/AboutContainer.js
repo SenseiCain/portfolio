@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import profile from '../images/profile.jpeg';
 
-class Bio extends Component {
+class AboutContainer extends Component {
     render() {
         return (
             <div id="bio" className="wrapper-inside">
@@ -42,4 +42,4 @@ class Bio extends Component {
     }
 }
 
-export default Bio;
+export default AboutContainer;
