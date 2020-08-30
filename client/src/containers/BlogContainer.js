@@ -18,40 +18,6 @@ class BlogContainer extends Component {
             return <BlogLink key={i} blog={b} setActiveBlog={this.props.setActiveBlog}/>
         })
     }
-
-    componentDidMount() {
-        
-        if (this.props.blogs.length === 0) {
-            this.props.fetchBlogs();
-        }
-
-        // this.updateComponentSize();
-        // window.addEventListener('resize', this.updateComponentSize, false);
-    }
-
-    componentWillUnmount() {
-        window.removeEventListener('resize', this.updateComponentSize, false)
-    }
-
-    updateComponentSize() {
-        const headerHeight = document.getElementById('header').offsetHeight;
-        const navHeight = document.getElementById('navbar').offsetHeight;
-        const footerHeight = document.getElementsByTagName('footer')[0].offsetHeight;
-
-        const desiredHeight = window.innerHeight - headerHeight - navHeight - footerHeight;
-
-        const blogHeight = document.getElementById('blog-inner').offsetHeight;
-
-        if (blogHeight + headerHeight + navHeight + footerHeight <= window.innerHeight) {
-            this.setState({
-                height: desiredHeight - 60
-            })
-        } else {
-            this.setState({
-                height: 'auto'
-            })
-        }
-    }
     
     render() {
         return (
