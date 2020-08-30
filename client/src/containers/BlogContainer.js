@@ -4,19 +4,19 @@ import BlogLink from '../components/BlogLink';
 import { fetchBlogTitles } from '../actions/fetchBlog';
 
 class BlogContainer extends Component {
-    constructor() {
-        super();
-        this.state = {
-            height: 'auto'
-        }
-
-        this.updateComponentSize = this.updateComponentSize.bind(this)
-    }
 
     generateBlogItems = () => {
         return this.props.blogs.map((b, i) => {
             return <BlogLink key={i} blog={b} setActiveBlog={this.props.setActiveBlog}/>
         })
+    }
+
+    componentDidMount() {
+        
+        if (this.props.blogs.length === 0) {
+            this.props.fetchBlogs();
+        }
+
     }
     
     render() {
@@ -24,8 +24,7 @@ class BlogContainer extends Component {
             <section id="blog" className="wrapper-inside">
                 <div 
                     id="blog-inner"
-                    className="page-inner"
-                    style={{height: this.state.height}}>
+                    className="page-inner">
                     <h1>Blogs</h1>
                     <div id="blog-list">
                         {this.generateBlogItems()}
