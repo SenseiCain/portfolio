@@ -25,7 +25,7 @@ class App extends Component {
         <div id="box-shadow-hide"></div>
 
         <Route render={({location}) => (
-          <TransitionGroup className="wrapper shadow" >
+          <TransitionGroup className="wrapper shadow grow" >
             <CSSTransition
               key={location.key}
               classNames="fade"

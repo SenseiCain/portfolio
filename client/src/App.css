@@ -42,6 +42,12 @@ body,p,a,ul,li{
     text-decoration: none;
 }
 
+#root {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
 section {
     z-index: 1;
 }
@@ -80,6 +86,10 @@ input, textarea {
 
 .page-inner {
     padding: 30px 0px;
+}
+
+.grow {
+    flex: 1;
 }
 
 .hidden{
