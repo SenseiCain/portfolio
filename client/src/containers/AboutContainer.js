@@ -14,10 +14,12 @@ class AboutContainer extends Component {
                             <p>
                                 I'm an innately curious person,
                                 who's always been fascinated by whats possible with software & a little imagination.
+                                I chose to pursue career in software engineering because it
+                                combines my interest of analytical thinking & creativity in a meaningful way.
+                            </p>
+                            <p>
                                 When I'm not buried in front of a computer
                                 I'm either hiking trails, skateboarding, or cooking new recipes.
-                                Feel free to reach out if you find my experience to be a fit.
-                                Thanks!
                             </p>
                             <ul>
                                 <li>
