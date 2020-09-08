@@ -1,6 +1,7 @@
 import React, { Fragment } from 'react';
 import { ReactComponent as GithubSVG } from '../images/github.svg';
 import { ReactComponent as YoutubeSVG } from '../images/youtube.svg';
+import { ReactComponent as WebsiteSVG } from '../images/world-wide-web.svg'
 
 const generateTechnologies = technologies => {
     return ((technologies) ? technologies : [{title: "Loading"}]).map((t, i) => {
@@ -12,15 +13,15 @@ const generateTechnologies = technologies => {
     })
 }
 
-const generateLinks = ({github, heroku, youtube}) => {
+const generateLinks = ({github, link, youtube}) => {
     const githubLink = () => <a href={github} target="_blank" rel="noopener noreferrer" ><GithubSVG className="svg-link" /></a>;
-    const herokuLink = () => <a href={heroku} target="_blank" rel="noopener noreferrer" ><GithubSVG className="svg-link" /></a>;
+    const websiteLink = () => <a href={link} target="_blank" rel="noopener noreferrer" ><WebsiteSVG className="svg-link" /></a>;
     const youtubeLink = () => <a href={youtube} target="_blank" rel="noopener noreferrer" ><YoutubeSVG className="svg-link" /></a>;
 
     return (
         <Fragment>
             <li>{github ? githubLink() : ""}</li>
-            <li>{heroku ? herokuLink() : ""}</li>
+            <li>{link ? websiteLink() : ""}</li>
             <li>{youtube ? youtubeLink() : ""}</li>
         </Fragment>
     )

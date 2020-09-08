@@ -2,11 +2,12 @@ import React from 'react';
 import MobileMac from './MobileMac';
 import { ReactComponent as GithubSVG } from '../images/github.svg';
 import { ReactComponent as YoutubeSVG } from '../images/youtube.svg';
+import { ReactComponent as WebsiteSVG } from '../images/world-wide-web.svg'
 
 const ProjectList = ({projects}) => {
 
     const githubLink = github => <a href={github} target="_blank" rel="noopener noreferrer" ><GithubSVG className="mobile-svg" /></a>;
-    const herokuLink = heroku => <a href={heroku} target="_blank" rel="noopener noreferrer" ><GithubSVG className="mobile-svg" /></a>;
+    const websiteLink = link => <a href={link} target="_blank" rel="noopener noreferrer" ><WebsiteSVG className="mobile-svg" /></a>;
     const youtubeLink = youtube => <a href={youtube} target="_blank" rel="noopener noreferrer" ><YoutubeSVG className="mobile-svg" /></a>;
     
 
@@ -16,7 +17,7 @@ const ProjectList = ({projects}) => {
         })
     }
 
-    const generateProject = ({title, description, img, github, heroku, youtube, technologies}, i) => {
+    const generateProject = ({title, description, img, github, link, youtube, technologies}, i) => {
         return (
             <div key={i} className="project-card">
                 <MobileMac 
@@ -25,7 +26,7 @@ const ProjectList = ({projects}) => {
                 <div className="project-card-title">
                     <h2>{title ? title : "Loading"}</h2>
                     {github ? githubLink(github) : ""}
-                    {heroku ? herokuLink(heroku) : ""}
+                    {link ? websiteLink(link) : ""}
                     {youtube ? youtubeLink(youtube) : ""}
                 </div>
                 <p>{description}</p>

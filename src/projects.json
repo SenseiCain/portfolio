@@ -6,7 +6,7 @@
             "img": "https://raw.githubusercontent.com/SenseiCain/clickyz/master/preview.png",
             "github": "https://github.com/SenseiCain/clickyz",
             "youtube": "https://www.youtube.com/watch?v=zMgoFB-pZOo",
-            "heroku": "",
+            "link": "",
             "technologies": [{"title": "Sinatra"}, {"title": "WEBGL"}, {"title": "p5.js"}, {"title": "Google Cloud"}]
         }, {
             "title": "HearthStone Deck Builder",
@@ -14,7 +14,7 @@
             "img": "https://raw.githubusercontent.com/SenseiCain/hearthstone-deck-builder/master/screenshot.png",
             "github": "https://github.com/SenseiCain/hearthstone-deck-builder",
             "youtube": "https://www.youtube.com/watch?v=H-Rd8PUcStM&t=33s",
-            "heroku": "",
+            "link": "",
             "technologies": [{"title": "OO JS"}, {"title": "fetch API"}, {"title": "SPA"}]
         }, {
             "title": "Sidetrack",
@@ -22,7 +22,7 @@
             "img": "https://raw.githubusercontent.com/SenseiCain/sidetrack/master/preview.png",
             "github": "https://github.com/SenseiCain/sidetrack",
             "youtube": "https://www.youtube.com/watch?v=w5RYMvS4e2w&t=1s",
-            "heroku": "",
+            "link": "https://sidetrack-cc.herokuapp.com/",
             "technologies": [{"title": "MVC"}, {"title": "ORM"}, {"title": "Omniauth"}]
         }
     ]
