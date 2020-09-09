@@ -25,8 +25,8 @@ const ProjectList = ({projects}) => {
                     src={img ? img : "" }  />
                 <div className="project-card-title">
                     <h2>{title ? title : "Loading"}</h2>
-                    {github ? githubLink(github) : ""}
                     {link ? websiteLink(link) : ""}
+                    {github ? githubLink(github) : ""}
                     {youtube ? youtubeLink(youtube) : ""}
                 </div>
                 <p>{description}</p>

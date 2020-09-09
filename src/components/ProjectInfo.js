@@ -20,8 +20,8 @@ const generateLinks = ({github, link, youtube}) => {
 
     return (
         <Fragment>
-            <li>{github ? githubLink() : ""}</li>
             <li>{link ? websiteLink() : ""}</li>
+            <li>{github ? githubLink() : ""}</li>
             <li>{youtube ? youtubeLink() : ""}</li>
         </Fragment>
     )
