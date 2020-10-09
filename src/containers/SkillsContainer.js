@@ -2,7 +2,7 @@ import React from 'react';
 
 const SkillsContainer = () => {
     const skills = {
-        "Front End": ["JavaScript", "React & Redux", "jQuery", "RESTful APIs"],
+        "Front End": ["JavaScript", "React & Redux", "jQuery", "RESTful APIs", "GraphQL"],
         "Back End": ["Ruby", "Rails", "MVC", "OOP"],
         "Stay Classy": ["Illustrator", "3D Modeling", "Bootstrap"],
     }
