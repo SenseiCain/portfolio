@@ -1,6 +1,14 @@
 {
     "projects": [
         {
+            "title": "Ticker App",
+            "description": "Serverless finance App made with React Router, hooks, and Chart.js.",
+            "img": "https://raw.githubusercontent.com/SenseiCain/ticker-app/master/preview.png",
+            "github": "https://github.com/SenseiCain/ticker-app",
+            "youtube": "",
+            "link": "https://ticker-app-cc.netlify.app/",
+            "technologies": [{"title": "React hooks"}, {"title": "React Router"}, {"title": "Chart.js"}, {"title": "GraphQL"}]
+        },{
             "title": "Clickyz",
             "description": "Interactive mechanical keyboard editor. This was made using a custom 3D keyboard model and p5.js for interactivity. A personal project displaying my appreciation for hand made things.",
             "img": "https://raw.githubusercontent.com/SenseiCain/clickyz/master/preview.png",
