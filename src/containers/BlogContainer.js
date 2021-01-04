@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import BlogLink from '../components/BlogLink';
+import BlogItem from '../components/BlogItem';
 import { fetchBlogTitles } from '../actions/fetchBlog';
 
 class BlogContainer extends Component {
 
     generateBlogItems = () => {
         return this.props.blogs.map((b, i) => {
-            return <BlogLink key={i} blog={b} setActiveBlog={this.props.setActiveBlog}/>
+            return <BlogItem key={i} blog={b} setActiveBlog={this.props.setActiveBlog}/>
         })
     }
 
