@@ -6,7 +6,20 @@ const fetchBlogTitles = () => {
         fetch(url)
             .then(resp => resp.json())
             .then(json => {
-                const blogs = json.items.map(i => ({ title: i.title, url: i.link }));
+                const months = [ "Jan.", "Feb.", "Mar.", "Apr.", "May", "June", "July", "Aug.", "Sept.", "Oct.", "Nov.", "Dec." ];
+
+                const formatDate = date => {
+                    // 2020-12-16 to Dec. 2020
+                    const d = new Date(date.split(' ')[0]);
+                    const shortMonthName = new Intl.DateTimeFormat("en-US", { month: "short" }).format;
+                    const shortName = shortMonthName(d);
+                    const year = d.getFullYear();
+                    
+                    return `${shortName} ${year}`
+                }
+
+                const blogs = json.items.map(i => ({ title: i.title, url: i.link, date: formatDate(i.pubDate) }));
+                console.log(blogs)
 
                 dispatch({ type: "ADD_BLOG_TITLES", blogs });
                 dispatch({ type: "STOP_ANIMATION" })

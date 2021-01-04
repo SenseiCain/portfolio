@@ -17,7 +17,7 @@ const BlogItem = props => {
                     </Link>
                 </div>
                 <div className="blog-info">
-                    <span className="info">5 mins</span>
+                    <span className="info">{props.blog.date}</span>
                 </div>
             </div>
         </div>
