@@ -18,7 +18,6 @@ const fetchBlogTitles = () => {
                 }
 
                 const blogs = json.items.map(i => ({ title: i.title, url: i.link, date: formatDate(i.pubDate) }));
-                console.log(blogs)
 
                 dispatch({ type: "ADD_BLOG_TITLES", blogs });
                 dispatch({ type: "STOP_ANIMATION" })
