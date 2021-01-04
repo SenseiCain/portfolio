@@ -6,7 +6,6 @@ const fetchBlogTitles = () => {
         fetch(url)
             .then(resp => resp.json())
             .then(json => {
-                const months = [ "Jan.", "Feb.", "Mar.", "Apr.", "May", "June", "July", "Aug.", "Sept.", "Oct.", "Nov.", "Dec." ];
 
                 const formatDate = date => {
                     // 2020-12-16 to Dec. 2020
