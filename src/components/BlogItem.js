@@ -10,16 +10,17 @@ const BlogItem = props => {
             className="blog-card"
             >
             <div className="blog-bar"></div>
-            <div className="blog-main">
-                <div className="blog-title">
-                    <Link to={`blog/${linkParam}`}>
-                        <h3>{props.blog.title}</h3>
-                    </Link>
+            <Link to={`blog/${linkParam}`}>
+                <div className="blog-main">
+                    <div className="blog-title">
+                        
+                            <h3>{props.blog.title}</h3>
+                    </div>
+                    <div className="blog-info">
+                        <span className="info">{props.blog.date}</span>
+                    </div>
                 </div>
-                <div className="blog-info">
-                    <span className="info">{props.blog.date}</span>
-                </div>
-            </div>
+            </Link>
         </div>
     )
 }

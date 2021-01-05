@@ -695,6 +695,10 @@ nav li a:hover {
     align-self: flex-start
 }
 
+.blog-card a {
+    margin-bottom: 0px;
+}
+
 .blog-card:hover .blog-bar {
     background-color: #ee6c4d;
 }
