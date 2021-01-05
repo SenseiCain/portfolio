@@ -13,7 +13,7 @@ const Mission = () => {
             loopCount: Infinity
         };
         
-        const typed = new Typed('#typed', options);
+        new Typed('#typed', options);
     }, [])
 
     return (
