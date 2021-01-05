@@ -1,12 +1,27 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import Typed from 'typed.js';
 
 const Mission = () => {
+    useEffect(() => {
+        const options = {
+            strings: ['Front End development', 'creating APIs', 'Back End development', 'deployment', 'serverless applications', 'wireframing', 'scripting', 'database management', 'MVC'],
+            typeSpeed: 80,
+            backSpeed: 60,
+            delay: 20,
+            cursorChar: '',
+            loop: true,
+            loopCount: Infinity
+        };
+        
+        const typed = new Typed('#typed', options);
+    }, [])
+
     return (
         <div id="mission" className="wrapper-inside">
             <p>
                 Creative young professional with a knack for tinkering and solving problems.
-                I am a recent <span>Flatiron School</span> grad with a strong focus in both <span>front end</span> & <span>back end</span> development.
-                I'm currently looking to make my first step towards an exciting career in software engineering.
+                I am a <span>Flatiron School</span> graduate with a strong focus in   
+                <div id='typed'></div>
             </p>
         </div>
     )

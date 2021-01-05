@@ -408,6 +408,15 @@ nav li a:hover {
     color: var(--accent-color);
 }
 
+#typed {
+    min-width: 180px;
+    display: inline-block;
+    color: #ee6c4d;
+    padding: 0px .4em;
+    margin-bottom: 0px;
+    text-align: left;
+}
+
 /* projects - mobile */
 #projects {
 
