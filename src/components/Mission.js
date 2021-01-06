@@ -4,7 +4,15 @@ import Typed from 'typed.js';
 const Mission = () => {
     useEffect(() => {
         const options = {
-            strings: ['Front End development', 'creating APIs', 'Back End development', 'deployment', 'serverless applications', 'wireframing', 'scripting', 'database management', 'MVC'],
+            strings: [
+                'Full Stack development', 
+                'creating APIs',
+                'deployment', 
+                'serverless applications', 
+                'wireframing', 
+                'scripting', 
+                'illustrations', 
+                'MVC design'],
             typeSpeed: 80,
             backSpeed: 60,
             delay: 20,
